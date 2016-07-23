@@ -3,11 +3,12 @@ var PLACEHOLDER_ROOM;
 PLACEHOLDER_ROOM = room27;
 
 // Version number defines
-globalvar vmaj, vmin, buildnumber, vcomment;
+globalvar vmaj, vmin, vrev, buildnumber, vcomment;
 vmaj = "2";
 vmin = "9";
+vrev = "1";
 buildnumber = string(date_get_year(GM_build_date)-2016) + string_replace_all(string_format(date_get_month(GM_build_date), 2, 0)," ","0") + string_replace_all(string_format(date_get_day(GM_build_date), 2, 0)," ","0");
-vcomment = "";
+vcomment = "Dev";
 
 // SOUND ENGINE INIT
 globalvar msc_menu, msc_tropical, msc_forest, msc_snow, 
@@ -168,7 +169,8 @@ globalvar rm;
    
 // Initialize snort variables.
 globalvar splash_world, splash_stage, splash_lives, splash_hits,
-splash_hits_max, hyptaur, tscale, worldname, splash_score, splash_ammo, currentsfx, currentmus;
+splash_hits_max, hyptaur, tscale, worldname, splash_score, splash_ammo, currentsfx, currentmus,
+debugm;
    splash_world = w_start;
    splash_stage = 0;
    splash_hits = 0;
@@ -180,6 +182,7 @@ splash_hits_max, hyptaur, tscale, worldname, splash_score, splash_ammo, currents
    tscale       = 0; // camera zoom
    currentsfx = 0;
    currentmus = 0;
+   debugm = true;
    
    for (i=0; i<99; i+=1){worldname[i] = "World undefined";}
    

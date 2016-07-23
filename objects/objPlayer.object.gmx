@@ -339,6 +339,7 @@ if splash_score &lt; 0{
    splash_score = 0;
 }
    
+if debugm == true{
 switch lockplr{
    case NLNF:
       dplayerstate = "Not locked ,not finished";
@@ -357,8 +358,6 @@ switch lockplr{
       break;
 }
 
-// Begin debug functions
-
 if hyptaur == 1{
    if keyboard_check_pressed(ord("K")){
       scrKillPlayer();                        // Destroy the nice old player because I want you to!!!
@@ -376,10 +375,12 @@ if hyptaur == 1{
       }
 }
 
-/*if keyboard_check_pressed(ord("D")){       // toggle debug mode
+if keyboard_check_pressed(ord("D")){       // toggle debug mode
       if hyptaur == 1{hyptaur = 0;}
       else{hyptaur = 1;}
-   }*/
+   }
+}
+
 if keyboard_check_pressed(ord("Q")){
 room_restart();}
 
@@ -614,33 +615,6 @@ if place_meeting(x,y,objDoorToBoss)                                   // If reac
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="obj1up">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>splash_score += 815;
-splash_hits -= 1;
-with (other){
-   instance_destroy();
-}
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
     <event eventtype="4" ename="objFakePlatform">
       <action>
         <libid>1</libid>
@@ -816,6 +790,33 @@ with (other){
           <argument>
             <kind>1</kind>
             <string>if l==0{l=1;splash_score += 8255;}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj1up">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>splash_score += 815;
+splash_hits -= 1;
+with (other){
+   instance_destroy();
+}
 </string>
           </argument>
         </arguments>
@@ -1386,6 +1387,7 @@ display_reset(0,false);
             <string>ffffff = splash_hits_max - splash_hits + 1
 if instance_number(objRubee) &gt; 0{jjjjjj = " - " + string(instance_number(objRubee)) + " left";}else{jjjjjj = "";}
 
+if debugm == true{
 if hyptaur == 1{
    draw_set_alpha(1);
    draw_set_color(c_white);
@@ -1397,6 +1399,8 @@ if hyptaur == 1{
    draw_text(0,98,"Room number " + string(room));
    draw_text(0,110,"Screen size: " + string(resx) + "x" + string(resy));
 }
+}
+
 draw_set_color(c_black);
 draw_set_alpha(0.5);
 draw_rectangle(0,0,resx,72,false);
@@ -1443,6 +1447,7 @@ y2=string_replace_all(string_format(view_yview[0], 3, 0)," ","0")
 draw_set_color(c_white);
 if visi == 1{draw_sprite(sprite_index,image_index,x,y);}
 
+if debugm == true{
 if hyptaur == 1
 {
 draw_set_color(c_black);
@@ -1451,7 +1456,7 @@ draw_set_halign(fa_center);
 draw_text(x-10,y-40,"P:" + x1 + ", " + y1);
 draw_text(x-10,y-50,"C:" + x2 + ", " + y2);
 }
-
+}
 draw_set_halign(fa_left);
 </string>
           </argument>

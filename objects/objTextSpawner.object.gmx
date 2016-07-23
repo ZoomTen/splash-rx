@@ -32,20 +32,28 @@ dmode = 0; // dialog mode
 spd = 1;   // Message speed. The bigger the longer the text will render. Cannot be 0.
 mcur = 0;  // Current message index
 mdrw = "";
-chrz = 0;  // Number of characters printed thus far
+chrz = 0;  // Number of characters printed
 
 //hold = 0;  it's supposed to speed up text if you hold contkey. But idfk how it works.
-
-mlen = string_length(msg[mcur]); //Message length
-contkey = ord("Z"); // fallback continue key
-skipkey = ord("X"); // fallback skip key
-enableskip = true; // Allow type skipping by pressing skipkey
 
 // Find message end.
 for (n=0; msg[n]!="%"; n+=1)
 {
 mend = n; // Message index end is where the "%" is located
 }
+
+if msg[0] == "!!E"
+{
+mcur = 1;
+   for (n=1; n &lt;= mend; n+=1){
+      msg[n] = base64_decode(msg[n]);
+   }
+}
+
+mlen = string_length(msg[mcur]); //Message length
+contkey = ord("Z"); // fallback continue key
+skipkey = ord("X"); // fallback skip key
+enableskip = true; // Allow type skipping by pressing skipkey
 
 alarm[0]=1;   //kickstart
 
@@ -194,11 +202,9 @@ if keyboard_check_pressed(contkey){
       else{
          lockplr = endr;
          font_delete(dfont);   // font no longer needed
-         
          if instance_exists(objDialogFcs){
             with(objDialogFcs){instance_destroy();}
          }
-         
          instance_destroy();
          }
       }

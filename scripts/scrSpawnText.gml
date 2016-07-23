@@ -2,7 +2,8 @@
 // This is for manually spawning text.
 // if withface flag is enabled please set in the text or it defaults to 0 (for nothing)
 
-scrString(argument0);  // generate message array based on id
+scrString(argument0);  // generate message array based on id given
+
 n = instance_create(argument2,argument3,objTextSpawner);
 with (n){
    spd = argument7;

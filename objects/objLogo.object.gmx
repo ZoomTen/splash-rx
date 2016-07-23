@@ -28,7 +28,7 @@
             <string>cz = "(c)2010, 2016 Silver Wolf Games/Zumipap";
 vnx = "";
 vnx += "Version ";
-vnx += vmaj + "." + vmin + "." + buildnumber + "-";
+vnx += vmaj + "." + vmin + "." + vrev + "." + buildnumber + "-";
 switch os_type{
    case os_windows:{vnx += "WIN";break;}
    case os_linux:{vnx += "LNX";break;}
