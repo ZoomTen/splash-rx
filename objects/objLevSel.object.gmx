@@ -139,7 +139,14 @@ if keyboard_check_pressed(vk_right)
 
 if keyboard_check_pressed(ckey)
 {
+   if lev_world_sel == 39{
+      if lev_lev_sel == 15{
+         scrLoadRoom(w_extra,2);
+      }
+   }
+   else{
    scrLoadRoom(lev_world_sel,lev_lev_sel);
+   }
 }
 </string>
           </argument>

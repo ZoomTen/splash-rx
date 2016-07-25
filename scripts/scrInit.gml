@@ -14,7 +14,6 @@ vcomment = "Dev";
 globalvar msc_menu, msc_tropical, msc_forest, msc_snow, 
 msc_boss, msc_debug, msc_sf, msc_fire, msc_pyroboss;
 
-if skipcasterloads == 0{
 // Initialize music variables.
    msc_menu     =  audio_create_stream("msc/sndmenu.ogg");
    msc_tropical =  audio_create_stream("msc/msctropical.ogg");
@@ -27,7 +26,6 @@ if skipcasterloads == 0{
    msc_hboss    =  audio_create_stream("msc/mschboss.ogg");
    msc_pyroboss =  audio_create_stream("msc/mscfireboss.ogg");
    msc_fire     =  audio_create_stream("msc/mscheatworld.ogg");
-}
 
 // Sound test descriptors
 /*globalvar sndid;
@@ -166,11 +164,12 @@ globalvar rm;
    
    rm[w_extra,0] = rmBlanketovania;
    rm[w_extra,1] = rmHypppp;
+   rm[w_extra,2] = rmDuke;
    
 // Initialize snort variables.
 globalvar splash_world, splash_stage, splash_lives, splash_hits,
 splash_hits_max, hyptaur, tscale, worldname, splash_score, splash_ammo, currentsfx, currentmus,
-debugm;
+debugm, splash_end;
    splash_world = w_start;
    splash_stage = 0;
    splash_hits = 0;
@@ -183,6 +182,7 @@ debugm;
    currentsfx = 0;
    currentmus = 0;
    debugm = true;
+   splash_end = 0; //0 = not beat, 1 = good beat, 2 = bad beat
    
    for (i=0; i<99; i+=1){worldname[i] = "World undefined";}
    

@@ -476,6 +476,7 @@
     <rooms name="world_extra">
       <room>rooms\rmBlanketovania</room>
       <room>rooms\rmHypppp</room>
+      <room>rooms\rmDuke</room>
     </rooms>
   </rooms>
   <constants number="17">

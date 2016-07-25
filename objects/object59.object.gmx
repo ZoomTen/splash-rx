@@ -156,10 +156,10 @@ if m == 0{s1 += 28;s2 -= 18;}
 if m == 1{s2 -= 0.5;}
 if m == 2{s3 += 28;s2 -= 32;}
 if m == 3{m = 4;
-scrSave();
-if !(splash_world == w_snow){
 splash_world += 1;
 splash_stage = 0;
+scrSave();
+if !(splash_world == w_snow){
 x=instance_create(0,0,objFadeOut);with x{targetroom = rmWorldIntro;}}else{
 x=instance_create(0,0,objFadeOut);with x{targetroom = rm[w_menus,4];}}
 }

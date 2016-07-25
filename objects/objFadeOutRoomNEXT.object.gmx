@@ -78,7 +78,9 @@ fdy1 -= fdxx
 
 if fdy0 &gt;= resx/2{
    if fdy1 &lt;= resx/2{
-      scrLoadRoom(splash_world,splash_stage+1);
+      splash_stage += 1;
+      scrSave();
+      scrLoadRoom(splash_world,splash_stage);
       }
    }
 }

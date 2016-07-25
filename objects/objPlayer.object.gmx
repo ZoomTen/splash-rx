@@ -27,6 +27,13 @@
             <kind>1</kind>
             <string>// THE MASTER!!!!!!!!!!!1 wh
 
+// make sure it doesn't update
+// when Splash moves into another room or something
+
+sdw = splash_world;
+sds = splash_stage;
+
+
 ffffff = 0;
 jjjjjj = "";
 invinc = 0;
@@ -243,34 +250,6 @@ off[w_extra,1] = 0;
         </arguments>
       </action>
     </event>
-    <event eventtype="3" enumb="2">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>/*if tmr &gt; 0{
-   tmr -= 1;
-}*/
-
-x = floor(x);
-y = floor(y);
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
     <event eventtype="3" enumb="1">
       <action>
         <libid>1</libid>
@@ -302,7 +281,7 @@ background_x[2] = view_xview[0]/8 + off[splash_world,0];
 background_y[0] = view_yview[0]/2 + off[splash_world,1];
 background_y[1] = view_yview[0]/4 + off[splash_world,1];
 background_y[2] = view_yview[0]/8 + off[splash_world,1];
-if splash_world == w_snow{
+if sdw == w_snow{
    myeh[3] += myeh[0];
    myeh[4] += myeh[1];
    myeh[5] += myeh[2];
@@ -598,16 +577,14 @@ else{
 
 if place_meeting(x,y,objDoor)                                   // If reached goal
 {
-   scrSave();
    lockplr = LNF;
    if !(instance_exists(objFadeOutRoomNEXT)){instance_create(0,0,objFadeOutRoomNEXT);}
 }
 
 if place_meeting(x,y,objDoorToBoss)                                   // If reached goal
 {
-   scrSave();
    lockplr = LNF;
-   if !(instance_exists(objFadeOut)){tb = instance_create(0,0,objFadeOut);with tb{targetroom = rmBossIntro};splash_stage+=1;}
+   if !(instance_exists(objFadeOut)){tb = instance_create(0,0,objFadeOut);with tb{targetroom = rmBossIntro};splash_stage+=1;scrSave();}
 }
 
 </string>
@@ -767,29 +744,6 @@ if place_meeting(x,y,objDoorToBoss)                                   // If reac
    // Destroy the nice old player because I want you to!!!
    scrKillPlayer();
 }
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="objDoor">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>if l==0{l=1;splash_score += 8255;}
 </string>
           </argument>
         </arguments>
@@ -1392,7 +1346,7 @@ if hyptaur == 1{
    draw_set_alpha(1);
    draw_set_color(c_white);
    draw_set_font(font1);
-   draw_text(0,50,string(splash_world) + "-" + string(splash_stage) + ". Lives: " + string(splash_lives));
+   draw_text(0,50,string(sdw) + "-" + string(sds) + ". Lives: " + string(splash_lives));
    draw_text(0,62,"Game Speed: " + string((gspeed + 1) * 30) + ", actual FPS: " + string(fps));
    draw_text(0,74,"SFX Volume: " + string(v_sfx) + "%. Music Volume: " + string(v_mus) + "%.");
    draw_text(0,86,"Player state: " + dplayerstate + ", player direction ..." + string(pdir));
@@ -1408,7 +1362,7 @@ draw_set_alpha(1);
 draw_set_color(c_white);
 draw_set_font(gfont);
 draw_set_halign(fa_left);
-draw_text_transformed(8,8,worldname[splash_world] + " " + string(splash_stage+1) + jjjjjj,1,1,0);
+draw_text_transformed(8,8,worldname[sdw] + " " + string(sds+1) + jjjjjj,1,1,0);
 draw_text_transformed(8,40,/*string(splash_score) + " / */"Ammo: " + string(splash_ammo),1,1,0);
 draw_set_halign(fa_right);
 //draw_text(resx-8,8,"Splash x" + string_replace_all(string_format(splash_lives, 2, 0)," ","0"));
