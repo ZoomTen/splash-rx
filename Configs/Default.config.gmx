@@ -180,7 +180,7 @@
     <option_linux_icon>Configs\Default\linux\icon64.png</option_linux_icon>
     <option_linux_interpolate>0</option_linux_interpolate>
     <option_linux_long_desc>[ALPHA] Splash rescues Friday the Caracal in his most epic(tm) adventure YET!!! wh</option_linux_long_desc>
-    <option_linux_maintainer_email></option_linux_maintainer_email>
+    <option_linux_maintainer_email>loloabid@hotmail.com</option_linux_maintainer_email>
     <option_linux_scale>-1</option_linux_scale>
     <option_linux_screenkey>-1</option_linux_screenkey>
     <option_linux_short_desc>Splash Rescues Friday RX</option_linux_short_desc>
@@ -189,7 +189,7 @@
     <option_linux_steam_app_id>0</option_linux_steam_app_id>
     <option_linux_sync>0</option_linux_sync>
     <option_linux_texture_page>2048</option_linux_texture_page>
-    <option_linux_version_build>718</option_linux_version_build>
+    <option_linux_version_build>0</option_linux_version_build>
     <option_linux_version_major>2</option_linux_version_major>
     <option_linux_version_minor>9</option_linux_version_minor>
     <option_loadalpha>255</option_loadalpha>
