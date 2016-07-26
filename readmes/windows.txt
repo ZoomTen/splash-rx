@@ -1,0 +1,52 @@
+/====================================\
+/ SPLASH RESCUES FRIDAY RX (WINDOWS) \
+/ v.2.9.x                            \
+/====================================\
+ 
+Info:
+   This is a (currently WIP) remake of an old platformer, "Ninja Splash Rescues
+   Friday" made in around 2010.
+   
+   This remake will (hopefully) feature new enemies, new graphics, a more sensible
+   plot, new music, and other stuff idk
+   
+   This version will also run in Linux (and maybe Mac) under Wine (tested with
+   version 1.9.14 dev, but it should hopefully work on stable version)
+   
+What this demo includes:
+   - 3 worlds (Snort Forest, Lush Tropical, Winter Breeze) + 1 new world
+     (Red Hot)
+   - An original soundtrack
+   - Save/load
+   - A slightly buggy platform engine
+   - Random items placed everywhere
+   - Impeccable clipart, stock and placeholder sprites
+   - Dialogue
+   - Lives system
+   - Other yummy stuff
+   
+What to expect in the next demos:
+   - Actual plot
+   - Redesigned everything
+   - Less snakes
+   - Less placeholders
+   - snort
+   
+Controls:
+   UP    = jump
+   LEFT  = run left
+   RIGHT = run right
+   SPACE = shoot shuriken (if you have ammo)
+   Q     = restart level
+   Z     = continue text/select
+   X     = skip text
+   
+Some nitpicky information you probably won't care:
+   Version number's 2.9.x for now because this is the 2nd remake of the game.
+   The first one came out a little snorty so yeah. The final release version
+   will have the version number of 3.0.x.
+   
+Credits:
+   Nyro Fletcher/SWG : base game, sprites, ideas, logo SFX
+   Zumipap           : music, graphics and most of the new programming
+   TheWildHyper      : new game SFX, Red Hot World boss

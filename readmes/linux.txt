@@ -1,0 +1,92 @@
+/====================================\
+/ SPLASH RESCUES FRIDAY RX (LINUX)   \
+/ v.2.9.x                            \
+/====================================\
+ 
+Info:
+   This is a (currently WIP) remake of an old platformer, "Ninja Splash Rescues
+   Friday" made in around 2010.
+   
+   This remake will (hopefully) feature new enemies, new graphics, a more sensible
+   plot, new music, and other stuff idk
+   
+   Before running the game, install the dependencies if you don't have them
+   already, see the Dependencies below. Check your distro for equivalent packages.
+   
+   Make sure you install the 32-BIT (i386) libraries if you're on a 64-bit system!
+
+   To run the game:
+   
+   - File managers: right click on the "SplashRX" file, click on Properties.
+     Click the permissions tab, and set the SplashRX file as executable.
+     Now double-click on "SplashRX", and if prompted click on "Execute".
+     
+   - Terminal: Navigate to where you unzipped the game, open any terminal
+     emulator (XTerm, Gnome Terminal, Konsole etc.) and type in:
+     
+     "chmod +x SplashRX && ./SplashRX"
+
+   There may be no audio output, most likely caused by OpenAL derping out.
+   Add this line:
+   
+   "drivers = pulse,alsa,oss"
+   
+   to "/etc/openal/alsoft.conf". This might fix the problem. If it doesn't,
+   look for other solutions or just use Wine to run the Windows version.
+   
+What this demo includes:
+   - 3 worlds (Snort Forest, Lush Tropical, Winter Breeze) + 1 new world
+     (Red Hot)
+   - An original soundtrack
+   - Save/load
+   - A slightly buggy platform engine
+   - Random items placed everywhere
+   - Impeccable clipart, stock and placeholder sprites
+   - Dialogue
+   - Lives system
+   - Other yummy stuff
+   
+What to expect in the next demos:
+   - Actual plot
+   - Redesigned everything
+   - Less snakes
+   - Less placeholders
+   - snort
+   
+Controls:
+   UP    = jump
+   LEFT  = run left
+   RIGHT = run right
+   SPACE = shoot shuriken (if you have ammo)
+   Q     = restart level
+   Z     = continue text/select
+   X     = skip text
+   
+Some nitpicky information you probably won't care:
+   Version number's 2.9.x for now because this is the 2nd remake of the game.
+   The first one came out a little snorty so yeah. The final release version
+   will have the version number of 3.0.x.
+   
+Credits:
+   Nyro Fletcher/SWG : base game, sprites, ideas, logo SFX
+   Zumipap           : music, graphics and most of the new programming
+   TheWildHyper      : new game SFX, Red Hot World boss
+   
+Dependencies (from readelf):
+   [libstdc++.so.6]
+   [libz.so.1]
+   [libXxf86vm.so.1]
+   [libGL.so.1]
+   [libopenal.so.1]
+   [libm.so.6]
+   [librt.so.1]
+   [libpthread.so.0]
+   [libdl.so.2]
+   [libcrypto.so.1.0.0]
+   [libXext.so.6]
+   [libX11.so.6]
+   [libXrandr.so.2]
+   [libGLU.so.1]
+   [libssl.so.1.0.0]
+   [libgcc_s.so.1]
+   [libc.so.6]
