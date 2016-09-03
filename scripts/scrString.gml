@@ -2,9 +2,12 @@ switch (argument0){
    case 0:
       msg[0] = "This is a test message.";
       msg[1] = "This is another line of text.";
-      msg[2] = "...";
+      msg[2] = ". . .";
       msg[3] = "Go away.";
-      msg[4] = "%";
+      msg[4] = ". . ."
+      msg[5] = "Hi! I'm Meiwakuna Baka! But you can just call me MB for short."
+      msg[6] = "Wh-"
+      msg[7] = "%";
       break;
    case 1:
       msg[0] = "IIII'M HOOOOOOME!!!!!";
@@ -27,8 +30,8 @@ switch (argument0){
       msg[2] = "`R03Oh my gosh! I just know that's you, Friday! You naughty caracal!";
       msg[3] = "`R01Oh my god! Not the blanket lady!";
       msg[4] = "`R03C'mon, we're going to go see the clown show in Alaska!";
-      msg[5] = "`R02What?! AAAAAHHHHH!!!! NOT CLOWNS!!!!!!!"; // as Friday tries to GTFO of here
-      msg[6] = "`R03C'mon, now!";  // as she drags Friday
+      msg[5] = "`R02What?! AAAAAHHHHH!!!! NOT CLOWNS!!!!!!!"; // as Friday tries to GTFO of here.
+      msg[6] = "`R03C'mon, now!";  // as she drags Friday Nyro: C'MON TM
       msg[7] = "%";
       break;
    case 3:
@@ -42,7 +45,7 @@ switch (argument0){
       msg[1] = "%";
       break;
    case 5:
-      msg[0] = "Monster Practice:#Avoid the monsters or kill them!##Press Z to continue";
+      msg[0] = "Monster Practice:#Avoid the monsters or defeat them!##Press Z to continue";
       msg[1] = "%";
       break;
    case 6:
@@ -62,25 +65,31 @@ switch (argument0){
       break;
 // boss dialogs.
    case 8:
-      msg[0] = "`R04Muahahahaha!!! You'll never beat me!!!";
-      msg[1] = "`R01Ok, you're the first boss, you're gonna be easier than just plain easy!";
-      msg[2] = "`R04You really think so? Well, try! You get hurt whenever you run into me! Muahahahha!!";
-      msg[3] = "%"
-      break;
-   case 9:
-      msg[0] = "`R05Muahahahaha!!! That dragon was just a warm-up! Now here's the real fight!";
-      msg[1] = "`R01Hmm...I'll probably beat you to. What's with all these random bosses anyway?";
-      msg[2] = "`R05Some weird lady told me to not let any ninja Great Danes past.";
-      msg[3] = "`R01Oh! Ok. Whatever, let's start this fight.";
+      msg[0] = "`R04H'rack lar carr mah lah!";
+      msg[1] = "`R01Um, what?";
+      msg[2] = "`R04Harr mah haaaaaa!";
+      msg[3] = "`R01Okay. Sure. Whatever.";
       msg[4] = "%"
       break;
-   case 10:
-      msg[0] = "`R06Muahahahha! Ok, I know...that laugh is getting kinda old now...but you'll never beat me!";
-      msg[1] = "`R01Yeah right! I beat those other easy bosses!";
-      msg[2] = "`R06Well, you'll nevr beat me, though! Let's get this fight started!";
-      msg[3] = "%"
+   case 9:
+      msg[0] = "`R05I'm a little teapot, short and stout!";
+      msg[1] = "`R01Okay wh-";
+      msg[2] = "`R05OH?! WHO ARE YOU?!";
+      msg[3] = "`R01I'm Splash . . .";
+      msg[4] = "`R05You heard my singing, didn't you?";
+      msg[5] = "`R01Uh, yeah."
+      msg[6] = "`R05SNORT! ONLY HANDSOME HORNET CAN HEAR MY SINGING! YOU MUST BE DESTROYED!"
+      msg[7] = "`R01Oh? Oh."
+      msg[8] = "%"
       break;
-   case 11: // Encoded text test, might be useful for spoiler text
+   case 10:
+      msg[0] = "`R06OOOOOOOOOOOOOOOOOUUUUUUUUUUUUHHHHHHHHHHH!!!!!!!!!!!!!!!!!!";
+      msg[1] = "`R01Okay WHAT?!";
+      msg[2] = "`R06I'M ELMO!!!!!! FACE THE WRATH OF MY KISSES!!!! Also peanut butter.";
+      msg[3] = "`R01.";
+      msg[4] = "%"
+      break;
+   case 11: // Encoded text test, might be useful for spoiler text Nyro: okay H O W
       msg[0] = "!!E"; // keyword
       msg[1] = "SSBIQVRFIFJPVUdFIHdoeSBkb2VzIG5vIG9uZSBlbHNlPyEgSeKAmW0gcmVhbGx5IGdsYWQgS251Y2tsZXMgd2FzbnQgb24gdGhlIGxpc3Q=";
       msg[2] = "Um91Z2UgdGhlIGJhdC4gd29yc3QsIG1vc3QgZGlzY3VzdGluZyBhbmQgZGVzdHVyYmluZyB0aGluZyBldmVyLiB3aG/igJlzIGJyaWdodCBpZGVhIHdhcyBpdCB0byBnaXZlIHRob3NlIGRpc2d1c3RpbmcgZmVtYWxlIG9yZ2Fucz8hISEgaWYgc2hlIGRpZG7igJl0IGxvb2sgc28gc2V4dWFsIGFuZCBmcmVha3kgdGhlbiBJIHdvdWxkIGdpdmUgaGVyIGEgc2Vjb25kIGNoYW5jZS4gYW5kIHBseiwgTEVBVkUgS05VQ0tMRVMgQUxPTkUhISE=";
@@ -101,13 +110,28 @@ switch (argument0){
       break;
    case 13:
       msg[0] = "`R07Hue. Fiar.";
-      msg[1] = "`R01...What the heck!!";
+      msg[1] = "`R01. . . What the heck!";
       msg[2] = "`R071V1 ME M8";
       msg[3] = "`R01*Sigh* Okay.";
       msg[4] = "%"
       break;
+   case 3915:
+      msg[0] = "Now's a good time for the world to end . . ."
+      msg[1] = ". . ."
+      msg[2] = "Okay why did you even put in this number?"
+      msg[3] = "%"
+      break;
+   case 14:
+        msg[0] = "`R01STOP WITH THE ''A SIMPLE START'' THING!!!";
+        msg[1] = "`R03oh";
+        msg[2] = "%";
+        break;
+   case 15:
+        msg[0] = "Dead ends:#With his jet shoes, Splash can glide up walls!#Jump against a wall and hold both the up and side arrow keys.##Press Z to continue"
+        msg[1] = "%";
+        break;
    default:
-      msg[0] = "...This doesn't seem to be a valid text ID!";
+      msg[0] = ". . . This doesn't seem to be a valid text ID!";
       msg[1] = "Snort!";
       msg[2] = "%";
       break;

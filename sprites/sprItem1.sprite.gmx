@@ -7,9 +7,9 @@
   <coltolerance>0</coltolerance>
   <sepmasks>0</sepmasks>
   <bboxmode>1</bboxmode>
-  <bbox_left>1</bbox_left>
-  <bbox_right>27</bbox_right>
-  <bbox_top>2</bbox_top>
+  <bbox_left>0</bbox_left>
+  <bbox_right>31</bbox_right>
+  <bbox_top>0</bbox_top>
   <bbox_bottom>31</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
@@ -32,25 +32,5 @@
     <frame index="9">images\sprItem1_9.png</frame>
     <frame index="10">images\sprItem1_10.png</frame>
     <frame index="11">images\sprItem1_11.png</frame>
-    <frame index="12">images\sprItem1_12.png</frame>
-    <frame index="13">images\sprItem1_13.png</frame>
-    <frame index="14">images\sprItem1_14.png</frame>
-    <frame index="15">images\sprItem1_15.png</frame>
-    <frame index="16">images\sprItem1_16.png</frame>
-    <frame index="17">images\sprItem1_17.png</frame>
-    <frame index="18">images\sprItem1_18.png</frame>
-    <frame index="19">images\sprItem1_19.png</frame>
-    <frame index="20">images\sprItem1_20.png</frame>
-    <frame index="21">images\sprItem1_21.png</frame>
-    <frame index="22">images\sprItem1_22.png</frame>
-    <frame index="23">images\sprItem1_23.png</frame>
-    <frame index="24">images\sprItem1_24.png</frame>
-    <frame index="25">images\sprItem1_25.png</frame>
-    <frame index="26">images\sprItem1_26.png</frame>
-    <frame index="27">images\sprItem1_27.png</frame>
-    <frame index="28">images\sprItem1_28.png</frame>
-    <frame index="29">images\sprItem1_29.png</frame>
-    <frame index="30">images\sprItem1_30.png</frame>
-    <frame index="31">images\sprItem1_31.png</frame>
   </frames>
 </sprite>

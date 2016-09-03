@@ -123,13 +123,13 @@ if keyboard_check_pressed(ckey){
          scrPlayAud(snd_text,true);
          instance_create(x,y,objNewGameSnort);
          instance_destroy();
-         /*if keyboard_string == "hyptaur"{ //activate debug mode
+         /* if keyboard_string == "hyptaur"{ //activate debug mode
             hyptaur = 1;
          }
          confirm = show_question("Are you sure?")
          if confirm == true{ 
             room_goto(rmIntro);
-         }*/
+         } */
       break;
       
       case 1:   // load
@@ -142,7 +142,7 @@ if keyboard_check_pressed(ckey){
             }
             else{
             i = instance_create(320-60,384+20,objTitleMessage);
-            with i{tmessage="Ou! There's no game here!#Start a new game pls n thnk##Press Z to continue";wie = 315;hei = 105;}
+            with i{tmessage="Ouh! There's no game here!#Please start a new game!##Press Z to continue.";wie = 315;hei = 105;}
             ini_close();
             instance_destroy();
             }

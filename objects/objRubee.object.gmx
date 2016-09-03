@@ -30,17 +30,20 @@
       sprite_index = sprItem1;
       break;
    case w_tropical:
-      sprite_index = sprGem2;
+      sprite_index = sprGem4;
       break;
    case w_snow:
       sprite_index = sprGem3;
+      break;
+   case w_fire:
+      sprite_index = sprGem2;
       break;
    default:
       sprite_index = sprItem1;
       break;
       }
-if gspeed == 0{image_speed = 1;}
-else{image_speed = 0.5;}
+if gspeed == 0{image_speed = 0.2;}
+else{image_speed = 0.2;}
 image_index = 0;
 </string>
           </argument>

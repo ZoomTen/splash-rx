@@ -11,7 +11,7 @@ switch (argument0){
       tys[8] = true;       // arrow?
       tys[9] = true;       // sound?
       tys[10] = false;     // face?
-      break;
+      break;               // Draw? Computer? Work? Fursuit? Indonesian furries? Wh
       
    case 1:   // dialog text
       tys[0] = 30;

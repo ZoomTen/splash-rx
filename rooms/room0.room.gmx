@@ -52,7 +52,7 @@
   </views>
   <instances>
     <instance objName="objFriday" x="524" y="92" name="inst_27212CE2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objWall" x="48" y="304" name="inst_3F198640" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objWall" x="56" y="304" name="inst_3F198640" locked="0" code="" scaleX="0.5" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWall" x="80" y="304" name="inst_5C5ABB06" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWall" x="64" y="304" name="inst_1D9B9B15" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWall" x="96" y="304" name="inst_4A1C380A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -62,8 +62,8 @@
     <instance objName="objWall" x="176" y="304" name="inst_527CEFF8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWall" x="160" y="304" name="inst_4B9C2688" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWall" x="192" y="304" name="inst_E8A92C79" locked="-1" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objWall" x="208" y="304" name="inst_55261F56" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objWall" x="224" y="256" name="inst_BBF6DAA2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objWall" x="208" y="304" name="inst_55261F56" locked="0" code="" scaleX="0.5" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objWall" x="232" y="256" name="inst_BBF6DAA2" locked="0" code="" scaleX="0.5" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWall" x="240" y="256" name="inst_AD590ADD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWall" x="256" y="256" name="inst_E8D2AE8F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWall" x="272" y="256" name="inst_345F3E85" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

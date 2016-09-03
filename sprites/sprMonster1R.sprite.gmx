@@ -5,7 +5,7 @@
   <yorigin>0</yorigin>
   <colkind>0</colkind>
   <coltolerance>0</coltolerance>
-  <sepmasks>0</sepmasks>
+  <sepmasks>-1</sepmasks>
   <bboxmode>1</bboxmode>
   <bbox_left>0</bbox_left>
   <bbox_right>31</bbox_right>
@@ -24,5 +24,6 @@
     <frame index="1">images\sprMonster1R_1.png</frame>
     <frame index="2">images\sprMonster1R_2.png</frame>
     <frame index="3">images\sprMonster1R_3.png</frame>
+    <frame index="4">images\sprMonster1R_4.png</frame>
   </frames>
 </sprite>

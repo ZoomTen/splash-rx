@@ -111,6 +111,7 @@ with (objBossBullet){
    instance_destroy();
    }
 //show_message("Snowman: No!!!! This is impossible!!!!!!!")
+//Nyro: More like Alligator wh
 path_end();
 instance_change(objExplode,true);
 </string>

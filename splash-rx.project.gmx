@@ -3,8 +3,8 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <datafiles number="39" name="datafiles">
-    <datafiles number="39" name="msc">
+  <datafiles number="42" name="datafiles">
+    <datafiles number="42" name="msc">
       <datafile>
         <name>msctropical.ogg</name>
         <exists>-1</exists>
@@ -193,9 +193,9 @@
         <filename>mscheatworld.ogg</filename>
       </datafile>
       <datafile>
-        <name>mscboohbah.ogg</name>
+        <name>mscmerrygoround.ogg</name>
         <exists>-1</exists>
-        <size>20573</size>
+        <size>1155299</size>
         <exportAction>2</exportAction>
         <exportDir></exportDir>
         <overwrite>0</overwrite>
@@ -207,7 +207,7 @@
             <CopyToMask>9223372036854775807</CopyToMask>
           </Config>
         </ConfigOptions>
-        <filename>mscboohbah.ogg</filename>
+        <filename>mscmerrygoround.ogg</filename>
       </datafile>
     </datafiles>
   </datafiles>
@@ -234,17 +234,20 @@
       <sprite>sprites\zzb</sprite>
       <sprite>sprites\zzc</sprite>
       <sprite>sprites\zzd</sprite>
+      <sprite>sprites\OH</sprite>
       <sprite>sprites\sprite49</sprite>
     </sprites>
     <sprites name="npc">
       <sprite>sprites\sprFridayOwner</sprite>
       <sprite>sprites\sprFriday</sprite>
+      <sprite>sprites\sprNyro</sprite>
     </sprites>
     <sprites name="enemies">
       <sprite>sprites\sprMonster1R</sprite>
       <sprite>sprites\sprMonster1L</sprite>
       <sprite>sprites\sprSnakeFlat</sprite>
       <sprite>sprites\sprEnemyPH</sprite>
+      <sprite>sprites\sprFireballUp</sprite>
     </sprites>
     <sprite>sprites\sprActions</sprite>
     <sprites name="fades">
@@ -254,14 +257,15 @@
       <sprite>sprites\sprItem1</sprite>
       <sprite>sprites\sprGem2</sprite>
       <sprite>sprites\sprGem3</sprite>
+      <sprite>sprites\sprGem4</sprite>
       <sprite>sprites\sprDoor</sprite>
       <sprite>sprites\sprMovingBlock</sprite>
       <sprite>sprites\sprPack</sprite>
+      <sprite>sprites\sprWeapon</sprite>
       <sprite>sprites\sprite73</sprite>
     </sprites>
     <sprites name="bosses">
       <sprite>sprites\sprBoss1</sprite>
-      <sprite>sprites\sprWeapon</sprite>
       <sprite>sprites\sprExplode</sprite>
       <sprite>sprites\sprBoss2</sprite>
       <sprite>sprites\sprMwahSpook</sprite>
@@ -319,7 +323,7 @@
     <background>background\bgForestTileset</background>
     <background>background\bgTileSetDeath</background>
     <background>background\bgTropicalNew</background>
-    <background>background\background17</background>
+    <background>background\bgFire1</background>
     <background>background\bgFiyah</background>
     <background>background\bgsForest</background>
     <background>background\ccc</background>
@@ -328,11 +332,17 @@
     <background>background\bgrSnowy3</background>
     <background>background\bgSnowTileset</background>
     <background>background\bgLogo</background>
-    <background>background\background19</background>
+    <background>background\bgFire2</background>
     <background>background\bgArrows</background>
     <background>background\bgPlaceholder</background>
     <background>background\background18</background>
     <background>background\background13</background>
+    <background>background\bgMenu</background>
+    <background>background\bggood</background>
+    <background>background\bgDesert</background>
+    <background>background\bgPrehistoric</background>
+    <background>background\bgCave</background>
+    <background>background\bgClock</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\path0</path>
@@ -370,19 +380,24 @@
     <objects name="obstacles">
       <object>objects\objBigWall</object>
       <object>objects\objWall</object>
+      <object>objects\objzzb</object>
       <object>objects\objWallBG</object>
       <object>objects\objClimb</object>
       <object>objects\objMarker</object>
       <object>objects\objDeath</object>
       <object>objects\objPlatform</object>
       <object>objects\object28</object>
+      <object>objects\objFireSpawner</object>
+      <object>objects\obj_projectile</object>
     </objects>
     <objects name="npc">
       <object>objects\objTransition</object>
       <object>objects\objFriday</object>
+      <object>objects\object63</object>
       <object>objects\objFridayOwner</object>
       <object>objects\objLadyRunningWithFriday</object>
       <object>objects\object39</object>
+      <object>objects\objNyro</object>
     </objects>
     <objects name="enemy">
       <object>objects\objSnake1</object>
@@ -439,6 +454,7 @@
       <object>objects\objArrow</object>
       <object>objects\objTextSpawner</object>
     </objects>
+    <object>objects\objimpeccable</object>
   </objects>
   <rooms name="rooms">
     <rooms name="world_menus">
@@ -460,6 +476,7 @@
       <room>rooms\room1</room>
       <room>rooms\room2</room>
       <room>rooms\room3</room>
+      <room>rooms\room41</room>
       <room>rooms\room4</room>
       <room>rooms\rmBoss1</room>
     </rooms>
@@ -476,6 +493,9 @@
       <room>rooms\room28</room>
       <room>rooms\room30</room>
       <room>rooms\room31</room>
+      <room>rooms\room39</room>
+      <room>rooms\room40</room>
+      <room>rooms\room42</room>
       <room>rooms\room33</room>
     </rooms>
     <rooms name="world_snow">
@@ -487,6 +507,18 @@
       <room>rooms\room19</room>
       <room>rooms\rmBoss3</room>
     </rooms>
+    <rooms name="world_desert">
+      <room>rooms\room43</room>
+    </rooms>
+    <rooms name="world_prehistoric">
+      <room>rooms\room44</room>
+    </rooms>
+    <rooms name="world_cave">
+      <room>rooms\room45</room>
+    </rooms>
+    <rooms name="world_clock">
+      <room>rooms\room46</room>
+    </rooms>
     <rooms name="world_end">
       <room>rooms\rmEnd</room>
     </rooms>
@@ -496,7 +528,7 @@
       <room>rooms\rmDuke</room>
     </rooms>
   </rooms>
-  <constants number="17">
+  <constants number="30">
     <constant name="NLNF">0</constant>
     <constant name="NLF">1</constant>
     <constant name="LNF">2</constant>
@@ -506,12 +538,25 @@
     <constant name="w_forest">2</constant>
     <constant name="w_tropical">3</constant>
     <constant name="w_fire">4</constant>
-    <constant name="w_snow">5</constant>
-    <constant name="w_water">6</constant>
-    <constant name="w_grand">7</constant>
-    <constant name="w_future">8</constant>
-    <constant name="w_base">9</constant>
-    <constant name="w_end">10</constant>
+    <constant name="w_desert">5</constant>
+    <constant name="w_prehist">6</constant>
+    <constant name="w_autumn">7</constant>
+    <constant name="w_snow">8</constant>
+    <constant name="w_rain">9</constant>
+    <constant name="w_cave">10</constant>
+    <constant name="w_night">11</constant>
+    <constant name="w_spooky">12</constant>
+    <constant name="w_future">13</constant>
+    <constant name="w_ethan">14</constant>
+    <constant name="w_clock">15</constant>
+    <constant name="w_sky">16</constant>
+    <constant name="w_meadow">17</constant>
+    <constant name="w_ocean">18</constant>
+    <constant name="w_clown">19</constant>
+    <constant name="w_walton">20</constant>
+    <constant name="w_pig">21</constant>
+    <constant name="w_base">22</constant>
+    <constant name="w_end">23</constant>
     <constant name="w_extra">99</constant>
     <constant name="default_splash_lives">4</constant>
   </constants>

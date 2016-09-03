@@ -26,10 +26,11 @@ msc_boss, msc_debug, msc_sf, msc_fire, msc_pyroboss, msc_what;
    msc_hboss    =  audio_create_stream("msc/mschboss.ogg");
    msc_pyroboss =  audio_create_stream("msc/mscfireboss.ogg");
    msc_fire     =  audio_create_stream("msc/mscheatworld.ogg");
-   msc_what     =  audio_create_stream("msc/mscboohbah.ogg");
+   msc_what     =  audio_create_stream("msc/mscmerrygoround.ogg");
 
-// Sound test descriptors
-/*globalvar sndid;
+ // Sound test descriptors
+ /*
+globalvar sndid;
    sndid[0,0] = msc_menu;
    sndid[0,1] = "HAVE FUN!!!!";
    sndid[0,2] = "Zumi";
@@ -92,22 +93,35 @@ msc_boss, msc_debug, msc_sf, msc_fire, msc_pyroboss, msc_what;
    
    sndid[15,0] = msc_blanketsu;
    sndid[15,1] = "Pull the Blanket";
-   sndid[15,2] = "Zumi";*/
+   sndid[15,2] = "Zumi"; */
 
 // GAME INIT
 
 /*
-   w_menus    = 0;  -> Menu world
+   w_menus    = 0;  -> Menus
    w_start    = 1;  -> Intro Stage
    w_forest   = 2;  -> Forest World        (old ID was 1)
-   w_tropical = 3;  -> Tropical World      (old ID was 2)
-   w_fire     = 4;  -> Fire World
-   w_snow     = 5;  -> Snow World          (old ID was 3)
-   w_water    = 6;  -> Water World
-   w_grand    = 7;  -> Ancient World
-   w_future   = 8;  -> Future World
-   w_base     = 9;  -> Base World
-   w_end      = 10; -> Ending              (old ID was 3.7)
+   w_tropical = 3;  -> Lush Tropical World (old ID was 2)
+   w_fire     = 4;  -> Red Hot World
+   w_desert   = 5;  -> Desert World
+   w_prehist  = 6;  -> Prehistoric World   (old ID was 7)
+   w_autumn   = 7;  -> Autumn World
+   w_snow     = 8;  -> Snow World          (old ID was 3, then 5)
+   w_rain     = 9;  -> Sunken House World  (old ID was 6; formerly "water")
+   w_cave     = 10; -> Cave World
+   w_night    = 11; -> Night World
+   w_spooky   = 12; -> Spooky World
+   w_future   = 13; -> Future World        (old ID was 8)
+   w_ethan    = 14; -> Big Mini World
+   w_clock    = 15; -> Clock World
+   w_sky      = 16; -> Sky World
+   w_meadow   = 17; -> Meadow World
+   w_ocean    = 18; -> Ocean World
+   w_clown    = 19; -> Aunt Helga World
+   w_walton   = 20; -> Walton World
+   w_pig      = 21; -> Pig Blanet World
+   w_base     = 22;  -> Base World         (old ID was 9)
+   w_end      = 23; -> Ending              (old ID was 3.7, then 10)
    w_extra    = 99; -> Secret Boss World
 */
    
@@ -129,8 +143,9 @@ globalvar rm;
    rm[w_forest,0] = room1;
    rm[w_forest,1] = room2;
    rm[w_forest,2] = room3;
-   rm[w_forest,3] = room4;
-   rm[w_forest,4] = rmBoss1;
+   rm[w_forest,3] = room41;
+   rm[w_forest,4] = room4;
+   rm[w_forest,5] = rmBoss1;
    
 //   rm[w_tropical,0] = room5; // todo: come up with another transition snort
    rm[w_tropical,0] = room6;
@@ -143,9 +158,18 @@ globalvar rm;
    rm[w_fire,0] = room28;
    rm[w_fire,1] = room30;
    rm[w_fire,2] = room31;
-   rm[w_fire,3] = room33;
+   rm[w_fire,3] = room39;
+   rm[w_fire,4] = room40;
+   rm[w_fire,5] = room42;
+   rm[w_fire,6] = room33;
    
-//   rm[w_snow,0] = room11; // todokete
+   rm[w_desert,0] = room43;
+   
+   rm[w_prehist,0] = room44;
+   
+   rm[w_autumn,0] = PLACEHOLDER_ROOM;
+   
+//   rm[w_snow,0] = room11; // todokete Nyro: Wh-
    rm[w_snow,0] = room12;
    rm[w_snow,1] = room13;
    rm[w_snow,2] = room14;
@@ -153,11 +177,31 @@ globalvar rm;
    rm[w_snow,4] = room19;
    rm[w_snow,5] = rmBoss3;
    
-   rm[w_water,0] = PLACEHOLDER_ROOM;
+   rm[w_rain,0] = PLACEHOLDER_ROOM;
    
-   rm[w_grand,0] = PLACEHOLDER_ROOM;
+   rm[w_cave,0] = room45;
+   
+   rm[w_night,0] = PLACEHOLDER_ROOM;
+   
+   rm[w_spooky,0] = PLACEHOLDER_ROOM;
    
    rm[w_future,0] = PLACEHOLDER_ROOM;
+   
+   rm[w_ethan,0] = PLACEHOLDER_ROOM;
+   
+   rm[w_clock,0] = room46;
+   
+   rm[w_sky,0] = PLACEHOLDER_ROOM;
+   
+   rm[w_meadow,0] = PLACEHOLDER_ROOM;
+   
+   rm[w_ocean,0] = PLACEHOLDER_ROOM;
+   
+   rm[w_clown,0] = PLACEHOLDER_ROOM;
+   
+   rm[w_walton,0] = PLACEHOLDER_ROOM;
+   
+   rm[w_pig,0] = PLACEHOLDER_ROOM;
    
    rm[w_base,0] = PLACEHOLDER_ROOM;
    
@@ -192,12 +236,25 @@ debugm, splash_end;
    worldname[w_forest] = "Snort Forest";
    worldname[w_tropical] = "Lush Tropical";
    worldname[w_fire] = "Red Hot";
+   worldname[w_desert] = "Snort Desert";
+   worldname[w_prehist] = "Crinkly Granny";
+   worldname[w_autumn] = "Autumn Forest";
    worldname[w_snow] = "Winter Breeze";
-   worldname[w_water] = "Waterloo";
-   worldname[w_grand] = "Ancient Times";
+   worldname[w_rain] = "Sunken House";
+   worldname[w_cave] = "Snort Cave";
+   worldname[w_night] = "Nighttime";
+   worldname[w_spooky] = "Creepy Rex";
    worldname[w_future] = "Futuristic";
+   worldname[w_ethan] = "Big Mini";
+   worldname[w_clock] = "Grandpop's Clock";
+   worldname[w_sky] = "Sky Fortress";
+   worldname[w_meadow] = "Snort Meadow";
+   worldname[w_ocean] = "Dylan's Weave";
+   worldname[w_clown] = "Aunt Helga";
+   worldname[w_walton] = "Walton";
+   worldname[w_pig] = "Pig Blanet";
    worldname[w_base] = "Base";
-   worldname[w_end] = "Ending/Credits";
+   worldname[w_end] = "Ending / Credits";
    worldname[w_extra] = "??????";
    
 // dialog variables

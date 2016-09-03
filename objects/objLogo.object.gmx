@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>cz = "(c)2010, 2016 Silver Wolf Games/Zumipap";
+            <string>cz = "(c)2010, 2016 Silver Wolf Games / Zumipap(?)";
 vnx = "";
 vnx += "Version ";
 vnx += vmaj + "." + vmin + "." + vrev + "." + buildnumber + "-";

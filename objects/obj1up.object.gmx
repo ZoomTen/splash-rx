@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>randomize();
+            <string>/* randomize();
 if floor(random(25))=0 {
    instance_destroy();
 }

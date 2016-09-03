@@ -55,7 +55,7 @@ contkey = ord("Z"); // fallback continue key
 skipkey = ord("X"); // fallback skip key
 enableskip = true; // Allow type skipping by pressing skipkey
 
-alarm[0]=1;   //kickstart
+alarm[0]=1;   //kickstart Nyro: KICKSTARTER(TM)
 
 // border stuff
 benb = 0;  // border enable
@@ -67,7 +67,7 @@ endr = 1;  // end lockplr result
 sepp = 32; // line height
 
 
-soundt = true; // typing sounds
+soundt = true; // typing sounds Nyro: In a stream? Wh
 </string>
           </argument>
         </arguments>
@@ -119,14 +119,14 @@ alarm[0] = spd * 2;  // loop after spd delay
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// Text typing routine.
+            <string>// Text typing routine. Nyro: You're on dish detail! Wh
 if dis == 0{
 if chrz &lt; mlen{   // While typing continues
 
    if string_char_at(msg[mcur],chrz+1)=="`"{
    // ` is the command interpreter symbol
-   // a backslash before it indicates a literal `
-         if string_char_at(msg[mcur],chrz+2) == "R"{ // r for reactions!!! xdddd
+   // a backslash before it indicates a literal ` Nyro: `. ME USING THE ` AS AN APOSTROPHE(TM)
+         if string_char_at(msg[mcur],chrz+2) == "R"{ // r for reactions!!! xdddd Nyro: yum
             fid = real(string_char_at(msg[mcur],chrz+3) + string_char_at(msg[mcur],chrz+4));
             chrz += 4;
             }

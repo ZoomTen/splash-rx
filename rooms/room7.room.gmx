@@ -337,8 +337,7 @@
     <instance objName="objRubee" x="592" y="368" name="inst_635727EC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objMarker1" x="16" y="368" name="inst_B7C5C316" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPack" x="480" y="80" name="inst_27513675" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objPack" x="512" y="432" name="inst_A1F08BD5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objPack" x="144" y="400" name="inst_24274DFD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objNyro" x="112" y="256" name="inst_476E69BA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bgTropicalNew" x="32" y="0" w="16" h="16" xo="16" yo="32" id="10004276" name="inst_2FDD9B80" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -658,6 +657,8 @@
     <tile bgName="bgTropicalNew" x="416" y="16" w="16" h="16" xo="160" yo="16" id="10004603" name="inst_11F2516F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgTropicalNew" x="400" y="16" w="16" h="16" xo="144" yo="16" id="10004604" name="inst_31DB1CA8" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgTropicalNew" x="400" y="64" w="16" h="16" xo="144" yo="48" id="10004605" name="inst_D53A0B67" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgTropicalNew" x="64" y="128" w="16" h="16" xo="80" yo="64" id="10008372" name="inst_566BFF0D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgTropicalNew" x="112" y="128" w="16" h="16" xo="80" yo="64" id="10008374" name="inst_561C732E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>

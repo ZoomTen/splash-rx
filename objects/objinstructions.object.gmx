@@ -59,6 +59,9 @@ alarm[0] = 1 // allow variables to load
    if splash_stage == 2{
    scrTextMain(2,6,NLF,0);
    }
+   if splash_stage == 3{
+   scrTextMain(2,15,NLF,0);
+   }
 }
 </string>
           </argument>

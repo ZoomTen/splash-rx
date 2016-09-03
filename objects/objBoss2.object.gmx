@@ -78,6 +78,7 @@
    instance_destroy();
    }
 //show_message("Alligator: Noo! How could you have beaten me???????")
+//snowman wh
 instance_change(objExplode,true);
 </string>
           </argument>
