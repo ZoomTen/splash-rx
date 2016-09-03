@@ -1,6 +1,6 @@
 # Splash Rescues Friday RX
 **Splash Rescues Friday RX** is a remake of an older game titled "*Ninja Splash Rescues Friday*"
-a.k.a "*Ninja Splash Saves Friday*" by [TJ-Otter / Nyro46](http://tj-otter.deviantart.com) circa 2010.
+a.k.a "*Ninja Splash Saves Friday*" by [Nyro Fletcher](http://tj-otter.deviantart.com) circa 2010.
 
 The game is currently still a **work in progress**, though a demo has been released. Note that
 many of the sprites haven't been finished, so a lot of them are currently placeholder sprites (or old sprites from the original game).
