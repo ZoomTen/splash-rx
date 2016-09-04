@@ -12,7 +12,8 @@ vcomment = "Git";
 
 // SOUND ENGINE INIT
 globalvar msc_menu, msc_tropical, msc_forest, msc_snow, 
-msc_boss, msc_debug, msc_sf, msc_fire, msc_pyroboss, msc_what;
+msc_boss, msc_debug, msc_sf, msc_fire, msc_pyroboss, msc_what,
+msc_desert;
 
 // Initialize music variables.
    msc_menu     =  audio_create_stream("msc/sndmenu.ogg");
@@ -27,6 +28,7 @@ msc_boss, msc_debug, msc_sf, msc_fire, msc_pyroboss, msc_what;
    msc_pyroboss =  audio_create_stream("msc/mscfireboss.ogg");
    msc_fire     =  audio_create_stream("msc/mscheatworld.ogg");
    msc_what     =  audio_create_stream("msc/mscmerrygoround.ogg");
+   msc_desert   =  audio_create_stream("msc/mscdesert.ogg");
 
  // Sound test descriptors
  /*
