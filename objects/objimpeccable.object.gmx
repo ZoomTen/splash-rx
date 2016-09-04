@@ -27,6 +27,31 @@
             <kind>1</kind>
             <string>var_impeccable = 0;
 var_drawyummybg = 0;
+counter = 0;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>audio_stop_all();
+scrPlayAud(msc_what,false); //yum!
 </string>
           </argument>
         </arguments>
@@ -49,23 +74,44 @@ var_drawyummybg = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if keyboard_check(ord('K')){ // Activate the impeccable thing
-if keyboard_check(ord('N')){
-if keyboard_check(ord('U')){
-if keyboard_check(ord('X')){
-if var_impeccable = 0{
-var_impeccable = 1
-var_drawyummybg = 1
-}
-}
-}
-}
-}
-
-if var_impeccable = 1{
-audio_stop_all();
-scrPlayAud(msc_what,false); //yum!
-var_impeccable = 2
+            <string>switch counter{
+   case 0:
+      if keyboard_check(ord('K')){
+         scrPlayAud(snd_gud,true);
+         counter += 1;
+      }
+      break;
+   case 1:
+      if keyboard_check(ord('N')){
+         scrPlayAud(snd_gud,true);
+         counter += 1;
+      }
+         break;
+   case 2:
+      if keyboard_check(ord('U')){
+         scrPlayAud(snd_gud,true);
+         counter += 1;
+      }
+         break;
+   case 3:
+      if keyboard_check(ord('X')){
+         scrPlayAud(snd_gud,true);
+         counter += 1;
+      }
+         break;
+   case 4:
+      switch var_impeccable{
+         case 0:
+            var_impeccable = 1;
+            var_drawyummybg = 1;
+            alarm[0] = 1;
+            break;
+         default:
+            break;
+      }
+         break;
+   default:
+      break;
 }
 </string>
           </argument>
@@ -75,91 +121,26 @@ var_impeccable = 2
     <event eventtype="8" enumb="0">
       <action>
         <libid>1</libid>
-        <id>612</id>
-        <kind>0</kind>
+        <id>603</id>
+        <kind>7</kind>
         <userelative>0</userelative>
-        <isquestion>-1</isquestion>
+        <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_if_variable</functionname>
+        <exetype>2</exetype>
+        <functionname></functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>0</kind>
-            <string>var_drawyummybg</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>1</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>0</string>
+            <kind>1</kind>
+            <string>if var_drawyummybg == 1{
+   draw_background_tiled(bggood,0,0)
+   }
+</string>
           </argument>
         </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>422</id>
-        <kind>1</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>0</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>502</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_draw_background</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>7</kind>
-            <background>bggood</background>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>0</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>0</string>
-          </argument>
-          <argument>
-            <kind>3</kind>
-            <string>1</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>424</id>
-        <kind>2</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>0</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
       </action>
     </event>
   </events>

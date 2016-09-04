@@ -8,7 +8,7 @@ vmaj = "2";
 vmin = "9";
 vrev = "1";
 buildnumber = string(date_get_year(GM_build_date)-2016) + string_replace_all(string_format(date_get_month(GM_build_date), 2, 0)," ","0") + string_replace_all(string_format(date_get_day(GM_build_date), 2, 0)," ","0");
-vcomment = "Dev";
+vcomment = "Git";
 
 // SOUND ENGINE INIT
 globalvar msc_menu, msc_tropical, msc_forest, msc_snow, 
@@ -170,6 +170,7 @@ globalvar rm;
    rm[w_autumn,0] = PLACEHOLDER_ROOM;
    
 //   rm[w_snow,0] = room11; // todokete Nyro: Wh-
+                            // Zy: FREAKING SIIVAGUNNER
    rm[w_snow,0] = room12;
    rm[w_snow,1] = room13;
    rm[w_snow,2] = room14;

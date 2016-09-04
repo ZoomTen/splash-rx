@@ -288,6 +288,7 @@
       <sprite>sprites\sprSplashFallRight</sprite>
       <sprite>sprites\sprSplashFallLeft</sprite>
       <sprite>sprites\sprSplashIdleRight</sprite>
+      <sprite>sprites\sprSplashTeleport</sprite>
       <sprite>sprites\sprite57</sprite>
       <sprite>sprites\sprSplashIdleLeft</sprite>
       <sprite>sprites\sprSplashLeft</sprite>
@@ -369,6 +370,7 @@
     <font>fonts\font2</font>
     <font>fonts\font3</font>
     <font>fonts\font1</font>
+    <font>fonts\monospacegood</font>
   </fonts>
   <objects name="objects">
     <object>objects\objFollower</object>
@@ -397,7 +399,9 @@
       <object>objects\objFridayOwner</object>
       <object>objects\objLadyRunningWithFriday</object>
       <object>objects\object39</object>
-      <object>objects\objNyro</object>
+      <objects name="levelnpc">
+        <object>objects\objNyro</object>
+      </objects>
     </objects>
     <objects name="enemy">
       <object>objects\objSnake1</object>
