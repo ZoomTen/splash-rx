@@ -136,35 +136,45 @@ x2=0;
 y1=0;
 y2=0;
 
-// World background positions. x is 0 and y is 1.
+// World background positions. x is array position 0 and y is array position 1.
 
+// null
 off[w_menus,0] = 0;
 off[w_menus,1] = 0;
 
+// start
 off[w_start,0] = 0;
 off[w_start,1] = 0;
 
+// snort forest
 off[w_forest,0] = 0;
 off[w_forest,1] = 0;
 
+// lush tropical
 off[w_tropical,0] = 0;
 off[w_tropical,1] = 0;
 
+// red hot
 off[w_fire,0] = 0;
 off[w_fire,1] = -150;
 
+// desert
 off[w_desert,0] = -100;
 off[w_desert,1] = -150;
 
+// grand dad
 off[w_prehist,0] = -100;
 off[w_prehist,1] = -100;
 
+// autumn
 off[w_autumn,0] = 0;
 off[w_autumn,1] = 0;
 
+// winter something
 off[w_snow,0] = 0;
 off[w_snow,1] = 0;
 
+// eh, figure out the rest :P
 off[w_rain,0] = 0;
 off[w_rain,1] = 0;
 
@@ -284,6 +294,40 @@ off[w_extra,1] = 0;
           <argument>
             <kind>1</kind>
             <string>jflag = 0;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="2">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>// NPC CODE MOVED TO HERE
+
+if place_meeting(x,y,objNyro)
+{
+   if keyboard_check_pressed(ord('Z')){
+    if var_nyrodg = 0{
+        lockplr = LNF
+        var_nyrodg = 1
+        scrTextMain(1,14,NLF,1)
+        }
+   }
+}
 </string>
           </argument>
         </arguments>
@@ -630,60 +674,6 @@ if place_meeting(x,y,objDoorToBoss)                                   // If reac
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="objzzb">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>{
-   action_move_contact(direction,12,false);
-   vspeed = 0;
-   hspeed = 0;
-}
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="obj_projectile">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>{
-   // Destroy the nice old player because I want you to!!!
-   //OOOH!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-   scrKillPlayer();
-}
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
     <event eventtype="4" ename="objFakePlatform">
       <action>
         <libid>1</libid>
@@ -956,35 +946,6 @@ else{
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="objNyro">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>if keyboard_check_pressed(ord('Z')){
-    if var_nyrodg = 0{
-        lockplr = LNF
-        var_nyrodg = 1
-        scrTextMain(1,14,NLF,1)
-}
-}
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
     <event eventtype="4" ename="objFriday">
       <action>
         <libid>1</libid>
@@ -1012,6 +973,33 @@ else{
    with (objFridayOwner){image_index=1;}
    instance_create(0,0,objFadeOutRoomNEXT);
    }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_projectile">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>{
+   // Destroy the nice old player because I want you to!!!
+   //OOOH!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+   scrKillPlayer();
 }
 </string>
           </argument>
@@ -1123,6 +1111,33 @@ else{
    }
 else{
    other.solid = false;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="objzzb">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>{
+   action_move_contact(direction,12,false);
+   vspeed = 0;
+   hspeed = 0;
 }
 </string>
           </argument>
@@ -1527,7 +1542,7 @@ if debugm == true{
 if hyptaur == 1
 {
 draw_set_color(c_black);
-draw_set_font(font3);
+draw_set_font(monospacegood);
 draw_set_halign(fa_center);
 draw_text(x-10,y-40,"P:" + x1 + ", " + y1);
 draw_text(x-10,y-50,"C:" + x2 + ", " + y2);
