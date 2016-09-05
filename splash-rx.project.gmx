@@ -374,6 +374,7 @@
     <script>scripts\scrLoadOps.gml</script>
     <script>scripts\scrSaveOps.gml</script>
     <script>scripts\scrSave.gml</script>
+    <script>scripts\scrInitDialogVars.gml</script>
     <script>scripts\scrInitOps.gml</script>
     <script>scripts\scrTextMain.gml</script>
     <script>scripts\scrSpawnText.gml</script>

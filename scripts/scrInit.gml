@@ -285,3 +285,8 @@ globalvar resx, resy, sc;
    window_set_size(resx,resy);
    surface_resize(application_surface,resx,resy);
    display_reset(0,false);
+   
+   scrInitDialogVars(); //test
+   
+globalvar eventtrigger;
+   eventtrigger = 0; // some kind of hack

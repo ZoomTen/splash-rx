@@ -67,7 +67,7 @@ endr = 1;  // end lockplr result
 sepp = 32; // line height
 
 
-soundt = true; // typing sounds Nyro: In a stream? Wh
+soundt = true; // typing sounds Nyro: In a stream? Wh Zy: LOL OH MY GOD!
 </string>
           </argument>
         </arguments>
@@ -200,7 +200,11 @@ if keyboard_check_pressed(contkey){
          }
          }
       else{
-         lockplr = endr;
+         if endr &lt; 4{lockplr = endr;}
+         else{eventtrigger = 1; lockplr = endr-4;}
+         // since possible player lock values are 0-3,
+         // 4-7 sets lock values while setting some event trigger
+         // because npc.
          font_delete(dfont);   // font no longer needed
          if instance_exists(objDialogFcs){
             with(objDialogFcs){instance_destroy();}

@@ -104,7 +104,6 @@ switch (argument0){
       break;
    case 12:
       msg[0] = "Oh? OH!!!!!!!##Looks like you beat the demo already ;)##Hopefully it'll give you a little idea of what's to come in the next demos or even the final game.##Oh yeah, there's like a bucketload of hidden stuff here... which you'll probably get to properly see, eventually.";
-//      msg[1] = "Thought I'd give you some background about why it's version '2.9' instead of '0.0001' for an alpha/demo version, in case you're curious.##It's because this is the 2nd remake of Ninja Splash Rescues Friday. I lost the first one, and besides, it's snorty anyway. And this could've been '3.0', but screw it, it's '2.9' because meh."
       msg[1] = "So yeah, thanks for playing the demo! We hope you enjoyed it!##SEE YOU SOON!!!!!!!!! wh";
       msg[2] = "%";
       break;
@@ -130,6 +129,20 @@ switch (argument0){
         msg[0] = "Dead ends:#With his jet shoes, Splash can glide up walls!#Jump against a wall and hold both the up and side arrow keys.##Press Z to continue"
         msg[1] = "%";
         break;
+        
+   case 16: // 16-18 nyro npc test dialog
+        msg[0] = "`R01Dialog test.";
+        msg[1] = "%";
+        break;
+   case 17:
+        msg[0] = "`R01Dialog test 2.";
+        msg[1] = "%";
+        break;
+   case 18:
+        msg[0] = "`R01Stop talking to me."; // OKAY WHAT
+        msg[1] = "%";
+        break;
+        
    default:
       msg[0] = ". . . This doesn't seem to be a valid text ID!";
       msg[1] = "Snort!";
