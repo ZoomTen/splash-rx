@@ -289,4 +289,4 @@ globalvar resx, resy, sc;
    scrInitDialogVars(); //test
    
 globalvar eventtrigger;
-   eventtrigger = 0; // some kind of hack
+   eventtrigger = 0; // logical karel. wh-
