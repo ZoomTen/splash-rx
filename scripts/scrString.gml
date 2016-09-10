@@ -130,7 +130,7 @@ switch (argument0){
         msg[1] = "%";
         break;
         
-   case 16: // 16-18 nyro npc test dialog
+   case 16: // 16-18,19 nyro npc test dialog
         msg[0] = "`R01Dialog test.";
         msg[1] = "%";
         break;
@@ -140,6 +140,10 @@ switch (argument0){
         break;
    case 18:
         msg[0] = "`R01Stop talking to me."; // OKAY WHAT
+        msg[1] = "%";
+        break;
+   case 19:
+        msg[0] = "OOOOOOHHHHHHHH!!!!!!!!!!!";
         msg[1] = "%";
         break;
         

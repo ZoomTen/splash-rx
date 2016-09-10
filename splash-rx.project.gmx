@@ -257,6 +257,7 @@
     <sprites name="npc">
       <sprite>sprites\sprFridayOwner</sprite>
       <sprite>sprites\sprFriday</sprite>
+      <sprite>sprites\sprNPCIndicator</sprite>
       <sprite>sprites\sprNyro</sprite>
     </sprites>
     <sprites name="enemies">
@@ -417,9 +418,7 @@
       <object>objects\objFridayOwner</object>
       <object>objects\objLadyRunningWithFriday</object>
       <object>objects\object39</object>
-      <objects name="levelnpc">
-        <object>objects\objNyro</object>
-      </objects>
+      <object>objects\objNPC</object>
     </objects>
     <objects name="enemy">
       <object>objects\objSnake1</object>
@@ -550,7 +549,7 @@
       <room>rooms\rmDuke</room>
     </rooms>
   </rooms>
-  <constants number="30">
+  <constants number="32">
     <constant name="NLNF">0</constant>
     <constant name="NLF">1</constant>
     <constant name="LNF">2</constant>
@@ -581,6 +580,8 @@
     <constant name="w_end">23</constant>
     <constant name="w_extra">99</constant>
     <constant name="default_splash_lives">4</constant>
+    <constant name="npc_nyro">0</constant>
+    <constant name="npc_test">1</constant>
   </constants>
   <help>
     <rtf>help.rtf</rtf>

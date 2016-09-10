@@ -208,7 +208,7 @@ globalvar rm;
    
    rm[w_base,0] = PLACEHOLDER_ROOM;
    
-   rm[w_end,0] = rmEnd;
+   //rm[w_end,0] = rmEnd; OLD SNORT ENDING THAT LEADS NOWHERE
    
    rm[w_extra,0] = rmBlanketovania;
    rm[w_extra,1] = rmHypppp;

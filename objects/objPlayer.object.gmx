@@ -48,6 +48,8 @@ pdir = 2;                          // 0 = nowhere. 1 = left. 2 = right.
 jflag = 0;                         // jump flag
 tscale = sc;                       // per room scale
 l=0;
+showdialogvars = 0;
+collidednpcid = 0;
 
 rx = resx/tscale; //I keep reading that as Rexy . . .
 ry = resy/tscale;
@@ -66,7 +68,7 @@ myeh[5] = 0;
 
 gfont = font_add_sprite(sprGUIFont,ord(" "),false,-1);   // gui font
 
-// just in case I somehow changed splash's sprite...
+// just in case Splash's sprite name changes
 
 plrleftsprite = sprSplashLeft;
 plrrightsprite = sprSplashRight;
@@ -79,6 +81,7 @@ plrdownleftsprite = sprSplashFallLeft;
 plrdownrightsprite = sprSplashFallRight;
 plrwallleftsprite = sprSplashWallLeft;
 plrwallrightsprite = sprSplashWallRight;
+plrdissipatesprite = sprSplashTeleport;
 plranimspeed = 0.5;
 plridlespeed = 0.25;
 jumpthe = 15; // jump timer
@@ -344,15 +347,26 @@ off[w_extra,1] = 0;
             <kind>1</kind>
             <string>// NPC CODE MOVED TO HERE
 
-if place_meeting(x,y,objNyro)
+if place_meeting(x,y,objNPC)
 {
+   showdialogvars = 1; // deeebuuuugggggg
+   collidednpcid = objNPC.onpcid;
+   
    if keyboard_check_pressed(ord('Z')){
-    if npctalkedto[0] = 0{
+    if npctalkedto[objNPC.onpcid] = 0{
+        npctalkedto[objNPC.onpcid] = 1;
         lockplr = LNF;
-        npctalkedto[0] = 1;
-        scrTextMain(1,npctxindex[0]+npctxid[0],5,1);
+        scrTextMain(1,npctxindex[objNPC.onpcid]+npctxid[objNPC.onpcid],NLF+4,1);
+        // NLF+4 tells the game to set the event trigger (TRIGGEREDtm wh) and
+        // sets the text state to "not locked, finished"
         }
    }
+   
+}
+
+else{
+showdialogvars = 0;
+collidednpcid = 0;
 }
 </string>
           </argument>
@@ -384,13 +398,15 @@ if keyboard_check(ord("S")){resy += 1}
 if keyboard_check(ord("D")){resx += 1}*/
 
 //parallaxes soraxesses Nyro: SORAXESS IS THE BEST OC EVER!!!!!!!!!!!
+// Zy: LOOOOOOL TOTALLY. creepy rex mask
+
 background_x[0] = view_xview[0]/2 + off[splash_world,0];
 background_x[1] = view_xview[0]/4 + off[splash_world,0];
 background_x[2] = view_xview[0]/8 + off[splash_world,0];
 background_y[0] = view_yview[0]/2 + off[splash_world,1];
 background_y[1] = view_yview[0]/4 + off[splash_world,1];
 background_y[2] = view_yview[0]/8 + off[splash_world,1];
-if sdw == w_snow{
+if sdw == w_snow{ //animate snow background
    myeh[3] += myeh[0];
    myeh[4] += myeh[1];
    myeh[5] += myeh[2];
@@ -424,7 +440,7 @@ if sdw == w_snow{
             <string>// Found in the misty forests of your armpit! :D wh
 
 if splash_score &lt; 0{
-   splash_score = 0;
+   splash_score = 0; // k
 }
    
 if debugm == true{
@@ -446,7 +462,7 @@ switch lockplr{
       break;
 }
 
-if hyptaur == 1{
+if hyptaur == 1{ // I REALLY CAN'T WITH THIS VARIABLE NAME
    if keyboard_check_pressed(ord("K")){
       scrKillPlayer();                        // Destroy the nice old player because I want you to!!!
    }
@@ -470,7 +486,7 @@ if keyboard_check_pressed(ord("D")){       // toggle debug mode
 }
 
 if keyboard_check_pressed(ord("Q")){
-room_restart();}
+room_restart();}  // CHEAT!!!11!!!1!! wh
 
 // Begin Splash player code.
 // Main player movements
@@ -523,7 +539,7 @@ if !(lockplr &amp; 2 == 2){
       {
          if place_meeting(x,y,objClimb)
          {
-            if place_free(x,y+playerclimb){y += playerclimb*1.5;}
+            if place_free(x,y+(playerclimb*1.5)){y += playerclimb*1.5;}
          }
       }
       
@@ -687,7 +703,7 @@ else{
 if place_meeting(x,y,objDoor)                                   // If reached goal
 {
    lockplr = LNF;
-   sprite_index = sprSplashTeleport;
+   sprite_index = plrdissipatesprite;
    image_speed = plranimspeed;
    if tflag == 0{alarm[3]=10;tflag=1;}
    if !(instance_exists(objFadeOutRoomNEXT)){instance_create(0,0,objFadeOutRoomNEXT);}
@@ -1245,6 +1261,9 @@ else{
           <argument>
             <kind>1</kind>
             <string>/* oh
+
+REALLY OLD CODE
+
    // Okay you stupid clown, check whether in the air!!!
    if place_free(x,y+1){
       gravity = playergrav;
@@ -1518,6 +1537,12 @@ if hyptaur == 1{
    draw_text(0,86,"Player state: " + dplayerstate + ", player direction ..." + string(pdir));
    draw_text(0,98,"Room number " + string(room));
    draw_text(0,110,"Screen size: " + string(resx) + "x" + string(resy));
+   if showdialogvars = 1{
+   draw_text(0,122,"Collided NPC: " + string(collidednpcid));
+   draw_text(0,134,"Current NPC Text ID : " + string(npctxid[collidednpcid]));
+   draw_text(0,146,"NPC text limit : " + string(npctxlimit[collidednpcid]));
+   draw_text(0,158,"NPC talked to? : " + string(npctalkedto[collidednpcid]));
+   }
 }
 }
 
