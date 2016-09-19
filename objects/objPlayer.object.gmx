@@ -1524,7 +1524,7 @@ display_reset(0,false);
           <argument>
             <kind>1</kind>
             <string>ffffff = splash_hits_max - splash_hits + 1
-if instance_number(objRubee) &gt; 0{jjjjjj = " - " + string(instance_number(objRubee)) + " left";}else{jjjjjj = "";}
+if instance_number(objRubee) &gt; 0{jjjjjj = " - " + string(instance_number(objRubee)) + guitext[22];}else{jjjjjj = "";}
 
 if debugm == true{
 if hyptaur == 1{
@@ -1554,7 +1554,7 @@ draw_set_color(c_white);
 draw_set_font(gfont);
 draw_set_halign(fa_left);
 draw_text_transformed(8,8,worldname[sdw] + " " + string(sds+1) + jjjjjj,1,1,0);
-draw_text_transformed(8,40,/*string(splash_score) + " / */"Ammo: " + string(splash_ammo),1,1,0);
+draw_text_transformed(8,40,/*string(splash_score) + " / */guitext[23] + string(splash_ammo),1,1,0);
 draw_set_halign(fa_right);
 //draw_text(resx-8,8,"Splash x" + string_replace_all(string_format(splash_lives, 2, 0)," ","0"));
 

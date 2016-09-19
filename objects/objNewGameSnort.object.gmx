@@ -172,7 +172,7 @@ if keyboard_check_pressed(skey){
             <kind>1</kind>
             <string>draw_set_color(c_white);
 draw_set_font(font2);
-draw_text(320,380,"Are you sure?");
+draw_text(320,380,guitext[6]);
 
 draw_set_color(c_white);
 draw_roundrect_ext(x-3,y-10-3,x+wie+3,y+((optionmax+1)*spc)+5+3,4,2,false);
@@ -181,9 +181,8 @@ draw_rectangle(x,y+yy,x+wie,y+yy+24,false);
 draw_set_color(make_colour_rgb(128,128,128));
 draw_roundrect_ext(x,y-10,x+wie,y+((optionmax+1)*spc)+5,4,4,true);
 draw_set_color(c_black);
-draw_text(x+10,y+(spc*0),"Yes");
-draw_text(x+10,y+(spc*1),"No");
-
+draw_text(x+10,y+(spc*0),guitext[0]);
+draw_text(x+10,y+(spc*1),guitext[1]);
 </string>
           </argument>
         </arguments>

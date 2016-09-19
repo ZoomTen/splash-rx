@@ -193,9 +193,9 @@ draw_set_font(yfont);
 draw_set_halign(fa_left);
 draw_set_blend_mode(bm_add);
 draw_set_alpha(1);
-draw_text_ext_transformed(s2,300-20,"Boss#Defeated!",33,500,1.5,1.5,0);
+draw_text_ext_transformed(s2,300-20,guitext[24],33,500,1.5,1.5,0);
 draw_set_alpha(0.08);
-draw_text_ext_transformed(s2-20,290-40,"Boss#Defeated!",33,500,2.7,2.7,0);
+draw_text_ext_transformed(s2-20,290-40,guitext[24],33,500,2.7,2.7,0);
 draw_set_blend_mode(bm_normal);
 draw_set_alpha(1);
 

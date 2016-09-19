@@ -2,13 +2,31 @@ var i, j; // counter snorts wHY
 var PLACEHOLDER_ROOM;
 PLACEHOLDER_ROOM = room27;
 
+globalvar langsel; // language select
+langsel = 0; // 0 = english
+             // 1 = indonesian
+             
+             // other languages?
+             // 2 = french?
+             // 3 = spanish?
+             // 4 = swedish?!?!?!? wh
+             
 // Version number defines
-globalvar vmaj, vmin, vrev, buildnumber, vcomment;
+globalvar vmaj, vmin, vrev, buildnumber, vcomment, gitversion;
+
+var glhf;
+
+glhf = file_text_open_read("version.txt");
+gitversion = file_text_read_string(glhf);
+file_text_close(glhf);
+
 vmaj = "2";
 vmin = "9";
 vrev = "1";
 buildnumber = string(date_get_year(GM_build_date)-2016) + string_replace_all(string_format(date_get_month(GM_build_date), 2, 0)," ","0") + string_replace_all(string_format(date_get_day(GM_build_date), 2, 0)," ","0");
-vcomment = "Git";
+vcomment = "Git commit \#" + gitversion;
+
+
 
 // SOUND ENGINE INIT
 globalvar msc_menu, msc_tropical, msc_forest, msc_snow, 
@@ -290,3 +308,6 @@ globalvar resx, resy, sc;
    
 globalvar eventtrigger;
    eventtrigger = 0; // logical karel. wh-
+   
+globalvar guitext;
+   scrGuiText();

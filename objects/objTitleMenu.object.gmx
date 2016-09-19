@@ -206,10 +206,10 @@ draw_set_color(make_colour_rgb(128,128,128));
 draw_roundrect_ext(x,y-10,x+wie,y+((optionmax+1)*spc)+5,4,4,true);
 draw_set_color(c_black);
 draw_set_font(font2);
-draw_text(x+10,y+(spc*0),"New Game");
-draw_text(x+10,y+(spc*1),"Load");
-draw_text(x+10,y+(spc*2),"Options");
-if debugm == true{draw_text(x+10,y+(spc*3),"Level Select");}
+draw_text(x+10,y+(spc*0),guitext[2]);
+draw_text(x+10,y+(spc*1),guitext[3]);
+draw_text(x+10,y+(spc*2),guitext[4]);
+if debugm == true{draw_text(x+10,y+(spc*3),guitext[5]);}
 //draw_text(x+10,y+(spc*4),"Test Level");
 </string>
           </argument>

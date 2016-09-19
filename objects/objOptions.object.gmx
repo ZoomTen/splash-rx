@@ -139,7 +139,7 @@ if keyboard_check_pressed(ckey){
         <exetype>2</exetype>
         <functionname></functionname>
         <codestring></codestring>
-        <whoName>self</whoName>
+        <whoName>other</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
@@ -151,15 +151,12 @@ draw_roundrect(50+xoff,(2*40)+yoff,620+xoff,(12*40)+yoff,false);
 draw_set_color(c_white);
 draw_set_alpha(1);
 draw_text(70+xoff,((optionsel+2)*40)+20+yoff,"-&gt;");
-draw_text(100+xoff,20+(2*40)+yoff,"SFX Volume:");
-draw_text(100+xoff,20+(3*40)+yoff,"Music Volume:");
-draw_text(100+xoff,20+(4*40)+yoff,"Back to title");
-/*draw_text(100,20+(2*40)+yoff,"Track Select:");
-draw_text(100,20+(6*40)+yoff,"Track Name: ");
-draw_text(100,20+(6.5*40)+yoff, sndid[sndt,1] + " by " + sndid[sndt,2]);*/
-draw_text(100+xoff,20+(8*40)+yoff,"Left or right to change settings");
-draw_text(100+xoff,20+(9*40)+yoff,"Up or down to move selection");
-draw_text(100+xoff,20+(10*40)+yoff,"Z to select");
+draw_text(100+xoff,20+(2*40)+yoff,guitext[7]);
+draw_text(100+xoff,20+(3*40)+yoff,guitext[8]);
+draw_text(100+xoff,20+(4*40)+yoff,guitext[9]);
+draw_text(100+xoff,20+(8*40)+yoff,guitext[10]);
+draw_text(100+xoff,20+(9*40)+yoff,guitext[11]);
+draw_text(100+xoff,20+(10*40)+yoff,guitext[12]);
 
 draw_rectangle(270+xoff,20+(2*40)+yoff,270+320+xoff,20+(2*40)+yoff+20,true);
 draw_rectangle(270+xoff,20+(3*40)+yoff,270+320+xoff,20+(3*40)+yoff+20,true);

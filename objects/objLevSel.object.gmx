@@ -172,18 +172,18 @@ if keyboard_check_pressed(ckey)
             <kind>1</kind>
             <string>draw_set_font(font2);
 draw_set_color(c_white);
-draw_text(1,(0*20)+20,"press k to die");
-draw_text(1,(1*20)+20,"press r to return to this screen");
-draw_text(1,(2*20)+20,"press t in this screen #to return to title");
-draw_text(1,(5*20)+20,"press z to select level.");
-draw_text(1,(6*20)+20,"press d to toggle debug mode");
-draw_text(1,(7*20)+20,"press i to initiate a text box");
+draw_text(1,(0*20)+20,guitext[13]);
+draw_text(1,(1*20)+20,guitext[14]);
+draw_text(1,(2*20)+20,guitext[15]);
+draw_text(1,(5*20)+20,guitext[16]);
+draw_text(1,(6*20)+20,guitext[17]);
+draw_text(1,(7*20)+20,guitext[18]);
 
 draw_text(110,((optionsel+10)*20)+20,"--&gt;");
-draw_text(220,(10*20)+20,"WORLD" + string(lev_world_sel));
-draw_text(220,(11*20)+20,"STAGE" + string(lev_lev_sel));
+draw_text(220,(10*20)+20,guitext[19] + string(lev_world_sel));
+draw_text(220,(11*20)+20,guitext[20] + string(lev_lev_sel));
 
-draw_text(220,(14*20)+20,"WORLD NAME:" + worldname[lev_world_sel]);
+draw_text(220,(14*20)+20,guitext[21] + worldname[lev_world_sel]);
 </string>
           </argument>
         </arguments>
