@@ -478,6 +478,7 @@
       <object>objects\objFadeOutRoomNEXT</object>
     </objects>
     <objects name="title">
+      <object>objects\objLangSel</object>
       <object>objects\objTitleMessage</object>
       <object>objects\objTitleMenu</object>
       <object>objects\objLogo</object>
@@ -498,6 +499,7 @@
   <rooms name="rooms">
     <rooms name="world_menus">
       <room>rooms\rmInit</room>
+      <room>rooms\room47</room>
       <room>rooms\rmLogo</room>
       <room>rooms\rmMenu</room>
       <room>rooms\rmIntro</room>

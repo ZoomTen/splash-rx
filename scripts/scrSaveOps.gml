@@ -5,4 +5,5 @@ ini_open("splashrx.ini");
 // Nyro: People who don't have SUPERCOMPUTERS!!!!!!!!! wh
       ini_write_real("ops","sfx",v_sfx);
    ini_write_real("ops","mus",v_mus);
+   ini_write_real("ops","lang",langsel);
 ini_close();

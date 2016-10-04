@@ -25,8 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>scrInitOps();
-scrInit();
+            <string>scrInit();
+scrInitOps();
+scrGuiText();
 room_goto_next();
 </string>
           </argument>

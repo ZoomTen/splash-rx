@@ -208,7 +208,7 @@ globalvar rm;
    
    rm[w_future,0] = PLACEHOLDER_ROOM;
    
-   rm[w_ethan,0] = PLACEHOLDER_ROOM;
+   rm[w_ethan,0] = PLACEHOLDER_ROOM; // I'M ETHAN BRADBERRY!!!! wh
    
    rm[w_clock,0] = room46;
    
@@ -307,7 +307,12 @@ globalvar resx, resy, sc;
    scrInitDialogVars(); //test
    
 globalvar eventtrigger;
-   eventtrigger = 0; // logical karel. wh-
+   eventtrigger = 0; // triggered(tm)(tm)
+
+   // move();   
+   // move();   
+   // move();   
+   // wh-
    
+
 globalvar guitext;
-   scrGuiText();
