@@ -1,3 +1,5 @@
+// Initialization script.
+
 var i, j; // counter snorts wHY
 var PLACEHOLDER_ROOM;
 PLACEHOLDER_ROOM = room27;
@@ -24,7 +26,7 @@ vmaj = "2";
 vmin = "9";
 vrev = "1";
 buildnumber = string(date_get_year(GM_build_date)-2016) + string_replace_all(string_format(date_get_month(GM_build_date), 2, 0)," ","0") + string_replace_all(string_format(date_get_day(GM_build_date), 2, 0)," ","0");
-vcomment = "Git commit \#" + gitversion;
+vcomment = "Magic branch"//"Git commit \#" + gitversion;
 
 
 
@@ -235,7 +237,7 @@ globalvar rm;
 // Initialize snort variables.
 globalvar splash_world, splash_stage, splash_lives, splash_hits,
 splash_hits_max, hyptaur, tscale, worldname, splash_score, splash_ammo, currentsfx, currentmus,
-debugm, splash_end;
+debugm, splash_end, is_boss;
    splash_world = w_start;
    splash_stage = 0;
    splash_hits = 0;
@@ -249,6 +251,7 @@ debugm, splash_end;
    currentmus = 0;
    debugm = true;
    splash_end = 0; //0 = not beat, 1 = good beat, 2 = bad beat
+   is_boss = false; // is a boss level?
    
    for (i=0; i<99; i+=1){worldname[i] = "World undefined";}
    
@@ -316,3 +319,5 @@ globalvar eventtrigger;
    
 
 globalvar guitext;
+
+   scrInitSpells();

@@ -25,25 +25,26 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// THE MASTER!!!!!!!!!!!1 wh Nyro: WHAT?!
+            <string>// create GUI object
+if !(instance_exists(objIngameGUI)){
+   instance_create(0,0,objIngameGUI);
+   }
 
-// make sure it doesn't update
-// when Splash moves into another room or something
-
-sdw = splash_world;
-sds = splash_stage;
+// THE MASTER!!!!!!!!!!!1 wh Nyro: WHAT?!
 
 window_x_derp = window_get_x()
 window_y_derp = window_get_y()
 
-ffffff = 0;
-jjjjjj = "";
+sdw = splash_world;
+sds = splash_stage;
+
 invinc = 0;
 visi = 1;
 tflag=0;
 lockplr = NLNF;                    // disable locking the player
-instance_create(0,0,objFadeIn);
+if !(instance_exists(objFollower)){
 instance_create(x,y,objFollower);
+}
 pdir = 2;                          // 0 = nowhere. 1 = left. 2 = right.
 jflag = 0;                         // jump flag
 tscale = sc;                       // per room scale
@@ -56,8 +57,6 @@ ry = resy/tscale;
 
 dplayerstate = " "
 
-my_goddamn_text = 0;
-
 myeh[0] = 3;
 myeh[1] = 2;
 myeh[2] = 1;
@@ -65,8 +64,6 @@ myeh[2] = 1;
 myeh[3] = 0;
 myeh[4] = 0;
 myeh[5] = 0;
-
-gfont = font_add_sprite(sprGUIFont,ord(" "),false,-1);   // gui font
 
 // just in case Splash's sprite name changes
 
@@ -442,7 +439,7 @@ if sdw == w_snow{ //animate snow background
 if splash_score &lt; 0{
    splash_score = 0; // k
 }
-   
+
 if debugm == true{
 switch lockplr{
    case NLNF:
@@ -462,27 +459,7 @@ switch lockplr{
       break;
 }
 
-if hyptaur == 1{ // I REALLY CAN'T WITH THIS VARIABLE NAME
-   if keyboard_check_pressed(ord("K")){
-      scrKillPlayer();                        // Destroy the nice old player because I want you to!!!
-   }
-   if keyboard_check_pressed(ord("R")){       // Return to level select screen
-      audio_stop_all();
-      splash_world = 0;
-      splash_stage = 0;
-      room_goto(rmLevSel);
-   }
-   if keyboard_check_pressed(ord("I")){
-      my_goddamn_text = get_string("Text box to display (MUST BE NUMBERS):","0");
-      lockplr = LNF;
-      scrTextMain(1,real(string_digits(my_goddamn_text)),NLF,1);
-      }
-}
-
-if keyboard_check_pressed(ord("D")){       // toggle debug mode
-      if hyptaur == 1{hyptaur = 0;}
-      else{hyptaur = 1;}
-   }
+// this bit of code moved to objIngameGUI
 }
 
 if keyboard_check_pressed(ord("Q")){
@@ -560,6 +537,19 @@ if !(lockplr &amp; 2 == 2){
             splash_ammo -= 1;
          }
       }
+
+      // workarounds?????????
+      
+      //
+      // if powermeter == 100
+      if unlockedSpells &gt; 0{                                    // C event [spell]
+         if keyboard_check_pressed(ord("C")){
+            if !(instance_exists(objSpellOverlay)){
+               instance_create(0,0,objSpellOverlay);
+               }
+            }
+      }
+         
       
 /// Sprite control code ///
 
@@ -661,8 +651,6 @@ if !(lockplr &amp; 2 == 2){
             }
          }
       }
-      
-      // workarounds?????????
       
       if !(place_free(x,y)){hspeed=2;}
       // is this even necessary?!
@@ -1523,9 +1511,7 @@ display_reset(0,false);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>ffffff = splash_hits_max - splash_hits + 1
-if instance_number(objRubee) &gt; 0{jjjjjj = " - " + string(instance_number(objRubee)) + guitext[22];}else{jjjjjj = "";}
-
+            <string>// debug data
 if debugm == true{
 if hyptaur == 1{
    draw_set_alpha(1);
@@ -1545,23 +1531,6 @@ if hyptaur == 1{
    }
 }
 }
-
-draw_set_color(c_black);
-draw_set_alpha(0.5);
-draw_rectangle(0,0,resx,72,false);
-draw_set_alpha(1);
-draw_set_color(c_white);
-draw_set_font(gfont);
-draw_set_halign(fa_left);
-draw_text_transformed(8,8,worldname[sdw] + " " + string(sds+1) + jjjjjj,1,1,0);
-draw_text_transformed(8,40,/*string(splash_score) + " / */guitext[23] + string(splash_ammo),1,1,0);
-draw_set_halign(fa_right);
-//draw_text(resx-8,8,"Splash x" + string_replace_all(string_format(splash_lives, 2, 0)," ","0"));
-
-for (i=ffffff; i &gt; 0; i-=1){
-draw_sprite(sprLivesSnort,0,resx-(32*i)-10,/*36*/8);
-}
-draw_set_halign(fa_left);
 </string>
           </argument>
         </arguments>
@@ -1584,14 +1553,17 @@ draw_set_halign(fa_left);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>x1=string_replace_all(string_format(x, 3, 0)," ","0")
+            <string>// debug variables
+x1=string_replace_all(string_format(x, 3, 0)," ","0")
 y1=string_replace_all(string_format(y, 3, 0)," ","0")
 x2=string_replace_all(string_format(view_xview[0], 3, 0)," ","0")
 y2=string_replace_all(string_format(view_yview[0], 3, 0)," ","0")
 
+// sprite
 draw_set_color(c_white);
 if visi == 1{draw_sprite(sprite_index,image_index,x,y);}
 
+// debug mode
 if debugm == true{
 if hyptaur == 1
 {

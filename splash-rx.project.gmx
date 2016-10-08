@@ -249,11 +249,13 @@
   <sounds name="sound">
     <sound>sound\snd_dead</sound>
     <sound>sound\snd_kill</sound>
+    <sound>sound\snd_charge</sound>
     <sound>sound\snd_text</sound>
     <sound>sound\snd_win</sound>
     <sound>sound\snd_gud</sound>
     <sound>sound\snd_imhome</sound>
     <sound>sound\snd_takehit</sound>
+    <sound>sound\snd_spell</sound>
     <sound>sound\snd_collect</sound>
   </sounds>
   <sprites name="sprites">
@@ -337,6 +339,8 @@
     <sprite>sprites\sprGUIFont</sprite>
     <sprite>sprites\sprArrow</sprite>
     <sprite>sprites\sprLOGO</sprite>
+    <sprite>sprites\sprOverlaySpells1</sprite>
+    <sprite>sprites\sprOverlaySpells2</sprite>
     <sprite>sprites\sprite50</sprite>
     <sprite>sprites\sprFont</sprite>
     <sprite>sprites\sprHypBossRight</sprite>
@@ -344,6 +348,9 @@
     <sprite>sprites\sprSplashScreen</sprite>
     <sprite>sprites\sprLivesSnort</sprite>
     <sprite>sprites\sprFont2</sprite>
+    <sprites name="spellwaves">
+      <sprite>sprites\sprSpellFire</sprite>
+    </sprites>
     <sprites name="dg">
       <sprite>sprites\sprBoss1DG</sprite>
       <sprite>sprites\sprBoss2DG</sprite>
@@ -390,6 +397,7 @@
     <script>scripts\scrLoadRoom.gml</script>
     <script>scripts\scrLoad.gml</script>
     <script>scripts\scrLoadOps.gml</script>
+    <script>scripts\scrInitSpells.gml</script>
     <script>scripts\scrSaveOps.gml</script>
     <script>scripts\scrSave.gml</script>
     <script>scripts\scrInitDialogVars.gml</script>
@@ -415,7 +423,14 @@
     <object>objects\objinstructions</object>
     <object>objects\objWorldIntro</object>
     <object>objects\object59</object>
+    <object>objects\objIngameGUI</object>
     <object>objects\objPlayer</object>
+    <objects name="spellelements">
+      <object>objects\objSpellOverlay</object>
+      <object>objects\objSpellBlast</object>
+      <object>objects\objSpellBullet</object>
+      <object>objects\objPlayerSpell</object>
+    </objects>
     <objects name="obstacles">
       <object>objects\objBigWall</object>
       <object>objects\objWall</object>
@@ -467,8 +482,8 @@
       <object>objects\objExplode</object>
       <object>objects\object46</object>
       <object>objects\object47</object>
-      <object>objects\objFakePlatform</object>
       <object>objects\objHypBoss</object>
+      <object>objects\objFakePlatform</object>
       <object>objects\objBlanketon</object>
       <object>objects\objBlanketonCtrl</object>
     </objects>
