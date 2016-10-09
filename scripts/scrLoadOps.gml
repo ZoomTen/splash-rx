@@ -1,3 +1,6 @@
+// Desc: Load saved game options
+// No arguments
+
 if file_exists("splashrx.ini"){
    ini_open("splashrx.ini");
 //      gspeed = ini_read_real("NinjaSplash","DoubleSpeed",0);

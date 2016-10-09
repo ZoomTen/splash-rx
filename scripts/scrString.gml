@@ -1,3 +1,6 @@
+// Desc: Game dialogs
+// No arguments
+
 if langsel == 1{ // indonesian text
 switch (argument0){
 

@@ -51,7 +51,7 @@ image_speed = 0.4;
             <kind>1</kind>
             <string>audio_stop_all();
 scrPlayAud(snd_win,true);
-instance_create(0,0,object59);
+instance_create(0,0,objTitleCards);
 </string>
           </argument>
         </arguments>

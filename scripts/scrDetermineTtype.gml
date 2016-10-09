@@ -1,3 +1,6 @@
+// Desc: Determine text type
+// arg0 = type
+
 switch (argument0){
    case 0:  // screen text type
       tys[0] = 16;         // x

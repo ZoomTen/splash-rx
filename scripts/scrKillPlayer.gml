@@ -1,6 +1,5 @@
-// originally it kills the player instantly
-// now it kills him slowly.
-// KILL THE NICE PLAYER!!! wh
+// Desc: KILL THE NICE PLAYER!!! wh
+// No arguments
 
 if objPlayer.invinc == 0{
    if splash_hits == splash_hits_max{

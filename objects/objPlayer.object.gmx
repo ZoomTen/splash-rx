@@ -32,9 +32,6 @@ if !(instance_exists(objIngameGUI)){
 
 // THE MASTER!!!!!!!!!!!1 wh Nyro: WHAT?!
 
-window_x_derp = window_get_x()
-window_y_derp = window_get_y()
-
 sdw = splash_world;
 sds = splash_stage;
 
@@ -120,17 +117,15 @@ view_vborder[0] = resy/tscale;
 view_object[0] = objFollower;
 view_visible[0] = true;
 view_enabled = true;
-window_set_size(resx,resy);
-display_set_gui_size(resx,resy);
+//window_set_size(resx,resy);
+//display_set_gui_size(resx,resy);
 
-if (window_get_height() != rx*tscale
-    &amp;&amp; window_get_width() != ry*tscale
-    &amp;&amp; !window_get_fullscreen()){
-
-window_set_rectangle(window_x_derp,window_y_derp,rx*tscale,ry*tscale);
-surface_resize(application_surface,rx,ry);
-display_reset(0,false);
-}
+//if (window_get_height() != rx*tscale
+//    &amp;&amp; window_get_width() != ry*tscale
+//    &amp;&amp; !window_get_fullscreen()){
+//surface_resize(application_surface,rx,ry);
+//display_reset(0,false);
+//}
 
 //tmr = room_speed * 60 * 10; // should I add a freaking timer to the entire level?
 

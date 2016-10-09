@@ -1,3 +1,6 @@
+// Desc: Plays level music
+// No arguments
+
 switch (splash_world){
       case w_forest:
          if !(audio_is_playing(msc_forest))

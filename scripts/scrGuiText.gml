@@ -1,4 +1,5 @@
-// for translation purposes
+// Desc: GUI text initialization for easy translation
+// No arguments
 
 switch(langsel){
    case 1:

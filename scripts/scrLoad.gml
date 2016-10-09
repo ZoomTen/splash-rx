@@ -1,4 +1,6 @@
-// Load saved game
+// Desc: Load saved game
+// No arguments
+
 if file_exists("splashrx.ini"){
    ini_open("splashrx.ini");
       if ini_section_exists("game"){

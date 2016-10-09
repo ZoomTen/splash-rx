@@ -1,3 +1,6 @@
+// Desc: Initialize NPC variables
+// No arguments
+
 globalvar npctxid, npctxindex, npctxlimit, npctalkedto; // string ids, string index, string limit
 
    npctxid[0] = 0; // nyro

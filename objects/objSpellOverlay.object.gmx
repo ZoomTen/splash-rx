@@ -87,21 +87,25 @@ shrivelledechidnapuggle = 0;
    if unlockedSpells &gt;= 1{
    if keyboard_check_pressed(vk_up){
    currentSpell = spellA;
+   currentSpellNum = 1;
    selmode = 1;
    }
    if unlockedSpells &gt;= 2{
    if keyboard_check_pressed(vk_down){
    currentSpell = spellB;
+   currentSpellNum = 2;
    selmode = 1;
    }
    if unlockedSpells &gt;= 3{
    if keyboard_check_pressed(vk_left){
    currentSpell = spellC;
+   currentSpellNum = 3;
    selmode = 1;
    }
    if unlockedSpells &gt;= 4{
    if keyboard_check_pressed(vk_right){
    currentSpell = spellD;
+   currentSpellNum = 4;
    selmode = 1;
    }
    }

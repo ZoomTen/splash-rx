@@ -1,4 +1,5 @@
-// Initialization script.
+// Desc: Game initialization script
+// No arguments
 
 var i, j; // counter snorts wHY
 var PLACEHOLDER_ROOM;
@@ -16,17 +17,18 @@ langsel = 0; // 0 = english
 // Version number defines
 globalvar vmaj, vmin, vrev, buildnumber, vcomment, gitversion;
 
-var glhf;
+//var glhf;
 
-glhf = file_text_open_read("version.txt");
-gitversion = file_text_read_string(glhf);
-file_text_close(glhf);
+//glhf = file_text_open_read("version.txt");
+//gitversion = file_text_read_string(glhf);
+//file_text_close(glhf);
 
-vmaj = "2";
-vmin = "9";
-vrev = "1";
+vmaj = "2"; // Major version
+vmin = "9"; // Minor version
+vrev = "2"; // Revision
+// calculate build number
 buildnumber = string(date_get_year(GM_build_date)-2016) + string_replace_all(string_format(date_get_month(GM_build_date), 2, 0)," ","0") + string_replace_all(string_format(date_get_day(GM_build_date), 2, 0)," ","0");
-vcomment = "Magic branch"//"Git commit \#" + gitversion;
+vcomment = "Git"//"Git commit \#" + gitversion;
 
 
 
@@ -35,7 +37,7 @@ globalvar msc_menu, msc_tropical, msc_forest, msc_snow,
 msc_boss, msc_debug, msc_sf, msc_fire, msc_pyroboss, msc_what,
 msc_desert;
 
-// Initialize music variables.
+// Initialize BGM ids
    msc_menu     =  audio_create_stream("msc/sndmenu.ogg");
    msc_tropical =  audio_create_stream("msc/msctropical.ogg");
    msc_forest   =  audio_create_stream("msc/sndmusic1.ogg");
@@ -50,72 +52,6 @@ msc_desert;
    msc_what     =  audio_create_stream("msc/mscmerrygoround.ogg");
    msc_desert   =  audio_create_stream("msc/mscdesert.ogg");
 
- // Sound test descriptors
- /*
-globalvar sndid;
-   sndid[0,0] = msc_menu;
-   sndid[0,1] = "HAVE FUN!!!!";
-   sndid[0,2] = "Zumi";
-   
-   sndid[1,0] = msc_forest;
-   sndid[1,1] = "Don't Get Lost";
-   sndid[1,2] = "Zumi";
-   
-   sndid[2,0] = msc_tropical;
-   sndid[2,1] = "Jamaa Ica";
-   sndid[2,2] = "Zumi";
-   
-   sndid[3,0] = msc_snow;
-   sndid[3,1] = "Snowin' Like A Momma";
-   sndid[3,2] = "Zumi";
-   
-   sndid[4,0] = msc_boss;
-   sndid[4,1] = "Some Kind of Showdown!";
-   sndid[4,2] = "Zumi";
-   
-   sndid[5,0] = msc_end;
-   sndid[5,1] = "Ending";
-   sndid[5,2] = "???";
-   
-   sndid[6,0] = msc_debug;
-   sndid[6,1] = "I'm Really Feelin' It!";
-   sndid[6,2] = "Zumi";
-   
-   sndid[7,0] = msc_blanketovania;
-   sndid[7,1] = "b u c k e t o v a n i a";
-   sndid[7,2] = "Zumi";
-   
-   sndid[8,0] = msc_sf;
-   sndid[8,1] = "SFBeat";
-   sndid[8,2] = "Zumi [ft. Hyper]";
-   
-   sndid[9,0] = msc_nboss;
-   sndid[9,1] = "Extra Boss 1";
-   sndid[9,2] = "Zumi";
-   
-   sndid[10,0] = msc_hboss;
-   sndid[10,1] = "Extra Boss 2";
-   sndid[10,2] = "Zumi";
-   
-   sndid[11,0] = msc_granddad;
-   sndid[11,1] = "7 GRAND DAD";
-   sndid[11,2] = "1992 1";
-   
-   sndid[12,0] = msc_pyroboss;
-   sndid[12,1] = "Hue. FIAR.";
-   sndid[12,2] = "Zumi";
-   
-   sndid[13,0] = msc_fire;
-   sndid[13,1] = "Heat of the Moment";
-   sndid[13,2] = "Zumi";
-   
-   sndid[14,0] = msc_future;
-   sndid[14,1] = "DerpSTEP";
-   sndid[14,2] = "Zumi";
-   
-   sndid[15,0] = msc_blanketsu;
-   sndid[15,1] = "Pull the Blanket";
-   sndid[15,2] = "Zumi"; */
 
 // GAME INIT
 
@@ -307,7 +243,7 @@ globalvar resx, resy, sc;
    surface_resize(application_surface,resx,resy);
    display_reset(0,false);
    
-   scrInitDialogVars(); //test
+
    
 globalvar eventtrigger;
    eventtrigger = 0; // triggered(tm)(tm)
@@ -317,7 +253,7 @@ globalvar eventtrigger;
    // move();   
    // wh-
    
-
-globalvar guitext;
-
+globalvar guitext;  
+   scrInitNPCVars();
+   
    scrInitSpells();

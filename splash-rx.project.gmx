@@ -350,6 +350,9 @@
     <sprite>sprites\sprFont2</sprite>
     <sprites name="spellwaves">
       <sprite>sprites\sprSpellFire</sprite>
+      <sprite>sprites\sprSpellIce</sprite>
+      <sprite>sprites\sprSpellDestroyer</sprite>
+      <sprite>sprites\sprSpellBink</sprite>
     </sprites>
     <sprites name="dg">
       <sprite>sprites\sprBoss1DG</sprite>
@@ -400,7 +403,7 @@
     <script>scripts\scrInitSpells.gml</script>
     <script>scripts\scrSaveOps.gml</script>
     <script>scripts\scrSave.gml</script>
-    <script>scripts\scrInitDialogVars.gml</script>
+    <script>scripts\scrInitNPCVars.gml</script>
     <script>scripts\scrInitOps.gml</script>
     <script>scripts\scrTextMain.gml</script>
     <script>scripts\scrSpawnText.gml</script>
@@ -422,7 +425,7 @@
     <object>objects\objIntroText</object>
     <object>objects\objinstructions</object>
     <object>objects\objWorldIntro</object>
-    <object>objects\object59</object>
+    <object>objects\objTitleCards</object>
     <object>objects\objIngameGUI</object>
     <object>objects\objPlayer</object>
     <objects name="spellelements">

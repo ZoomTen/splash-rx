@@ -1,3 +1,6 @@
+// Desc: Save the game
+// No arguments
+
 // Save the game now
 ini_open("splashrx.ini");
    ini_write_real("game","a",splash_world);

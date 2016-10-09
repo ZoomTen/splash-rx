@@ -1,6 +1,18 @@
-// scrSpawnText(id,endr,x,y,width,height,lnspace,speed,skip?,border?,arrow?,sound?,withface?,dmode);
-// This is for manually spawning text.
-// if withface flag is enabled please set in the text or it defaults to 0 (for nothing)
+// Desc: Spawn text manually
+// arg0 = Text ID
+// arg1 = Text ID (see scrString)
+// arg2 = X offset
+// arg3 = Y offset
+// arg4 = Width
+// arg5 = Height
+// arg6 = Line space
+// arg7 = Text speed
+// arg8 = Skippable?
+// arg9 = Draw borders?
+// arg10 = Draw arrow?
+// arg11 = Enable sound?
+// arg12 = Spawn faces too?
+// arg13 = Dialog mode? (pause between words or no pause?)
 
 scrString(argument0);  // generate message array based on id given
 

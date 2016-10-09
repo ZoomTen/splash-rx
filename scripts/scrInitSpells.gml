@@ -1,3 +1,6 @@
+// Desc: Initialize spells
+// No arguments
+
 // Special spells Splash can use later in the story??
 
 // The idea is that spells are triggered using a combination
@@ -27,15 +30,18 @@
 // etc., depends on the number of different spells we're gonna have
 
 globalvar numSpells, unlockedSpells, spellEnable,
-spellA, spellB, spellC, spellD, currentSpell;
-   numSpells = 4; // one-indexed
+spellA, spellB, spellC, spellD, currentSpell,
+currentSpellNum; //extra variable(tm)
+
+   numSpells = 4; // starts from 1
    unlockedSpells = 0; // initialization value, don't change
+   currentSpellNum = 0;
    spellEnable[0] = true; // unlocked moveset 1 (up)
    spellEnable[1] = true; // unlocked moveset 2 (down)
    spellEnable[2] = false; // unlocked moveset 3 (left)
    spellEnable[3] = false; // unlocked moveset 4 (right)
    
-   // check unlocked spells
+   // check enabled spells and set the # of unlocked spells accordingly
    for (i=0; i<=numSpells-1; i+=1){if spellEnable[i] == true{unlockedSpells += 1;}}
 
 // A [up]
@@ -75,7 +81,8 @@ spellA, spellB, spellC, spellD, currentSpell;
    spellD[5] = vk_right;
    spellD[6] = vk_down;
    spellD[7] = vk_down;
-   
+
+// Currently loaded spell moveset
    currentSpell[0] = 4;
    currentSpell[1] = vk_up;
    currentSpell[2] = vk_up;
