@@ -25,10 +25,13 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>audio_stop_all();
+            <string>languageblah[0] = "English";
+languageblah[1] = "Indonesia";
+
+audio_stop_all();
 scrPlayAud(msc_debug,false);
 optionsel = 0;
-optionmax = 2;
+optionmax = 3;
 sndt = 0;
 sndtmax = 15;
 instance_create(0,0,objFadeIn);
@@ -80,8 +83,8 @@ if keyboard_check_pressed(vk_right){
       case 1:
          if v_mus &lt; 100{v_mus += 10;}else if v_mus == 100{v_mus = 0;}
          break;
-      /*case 2:
-         if sndt &lt; sndtmax{sndt += 1;}else if sndt == sndtmax{sndt = 0;}*/
+      case 2:
+         if langsel &lt; langsels{langsel += 1;}else if langsel == langsels{langsel = 0;}
       default:
          break;
    }
@@ -95,15 +98,15 @@ if keyboard_check_pressed(vk_left){
       case 1:
          if v_mus &gt; 0{v_mus -= 10;}else if v_mus == 0{v_mus = 100;}
          break;
-      /*case 2:
-         if sndt &gt; 0{sndt -= 1;}else if sndt == 0{sndt = sndtmax;}*/
+      case 2:
+         if langsel &gt; 0{langsel -= 1;}else if langsel == 0{langsel = langsels;}
       default:
          break;
    }
 }
 
 if keyboard_check_pressed(ckey){
-   if optionsel == 2{
+   if optionsel == optionmax{
       /*audio_stop_all();
       scrPlayAud(sndid[sndt,0],false);*/
       xzl = 1;
@@ -153,7 +156,8 @@ draw_set_alpha(1);
 draw_text(70+xoff,((optionsel+2)*40)+20+yoff,"-&gt;");
 draw_text(100+xoff,20+(2*40)+yoff,guitext[7]);
 draw_text(100+xoff,20+(3*40)+yoff,guitext[8]);
-draw_text(100+xoff,20+(4*40)+yoff,guitext[9]);
+draw_text(100+xoff,20+(4*40)+yoff,guitext[25]);
+draw_text(100+xoff,20+(5*40)+yoff,guitext[9]);
 draw_text(100+xoff,20+(8*40)+yoff,guitext[10]);
 draw_text(100+xoff,20+(9*40)+yoff,guitext[11]);
 draw_text(100+xoff,20+(10*40)+yoff,guitext[12]);
@@ -165,6 +169,8 @@ draw_set_alpha(0.7);
 draw_rectangle(270+xoff,20+(2*40)+yoff,270+(320*(v_sfx/100))+xoff,20+(2*40)+yoff+20,false);
 draw_rectangle(270+xoff,20+(3*40)+yoff,270+(320*(v_mus/100))+xoff,20+(3*40)+yoff+20,false);
 draw_set_alpha(1);
+
+draw_text(200+xoff,20+(4*40)+yoff,languageblah[langsel]);
 //draw_rectangle(200,20+(3*40),500,((3*40)+40)*(v_mus/100),false);
 //draw_text(200,20+(2*40)+yoff,string(v_sfx));
 //draw_text(200,20+(3*40)+yoff,string(v_mus));

@@ -247,6 +247,7 @@
   </datafiles>
   <NewExtensions/>
   <sounds name="sound">
+    <sound>sound\snd_fireball</sound>
     <sound>sound\snd_dead</sound>
     <sound>sound\snd_kill</sound>
     <sound>sound\snd_charge</sound>
@@ -413,6 +414,8 @@
     <script>scripts\scrPlayAud.gml</script>
     <script>scripts\scrKillPlayer.gml</script>
     <script>scripts\scrInit.gml</script>
+    <script>scripts\scrText_EN.gml</script>
+    <script>scripts\scrText_ID.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\font2</font>

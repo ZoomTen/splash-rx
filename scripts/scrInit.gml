@@ -5,7 +5,8 @@ var i, j; // counter snorts wHY
 var PLACEHOLDER_ROOM;
 PLACEHOLDER_ROOM = room27;
 
-globalvar langsel; // language select
+globalvar langsel, langsels; // language select
+langsels = 1;
 langsel = 0; // 0 = english
              // 1 = indonesian
              

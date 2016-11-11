@@ -34,6 +34,8 @@ switch(langsel){
       guitext[23] = "Ammo: ";
 // title cards
       guitext[24] = "Bos#Dikalahkan!";
+// option screens 2
+      guitext[25]  = "Bahasa:";
       break;
    default:
 // general
@@ -67,5 +69,7 @@ switch(langsel){
       guitext[23] = "Ammo: ";
 // title cards
       guitext[24] = "Boss#Defeated!";
+// option screens 2
+      guitext[25]  = "Language:";
       break;
 }

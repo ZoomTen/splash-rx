@@ -3,8 +3,8 @@
   <caption></caption>
   <width>640</width>
   <height>480</height>
-  <vsnap>16</vsnap>
-  <hsnap>32</hsnap>
+  <vsnap>1</vsnap>
+  <hsnap>1</hsnap>
   <isometric>0</isometric>
   <speed>30</speed>
   <persistent>0</persistent>
@@ -270,7 +270,7 @@
     <instance objName="objRubee" x="480" y="176" name="inst_ECC88AB7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objRubee" x="544" y="176" name="inst_A51FA1D2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objinstructions" x="16" y="16" name="inst_1BF249F3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objNPC" x="304" y="432" name="inst_7E59F632" locked="0" code="onpcid = npc_nyro;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objNPC" x="305" y="440" name="inst_7E59F632" locked="0" code="onpcid = npc_nyro;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bgTropicalNew" x="0" y="464" w="16" h="16" xo="64" yo="0" id="10006557" name="inst_E1BB419A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

@@ -31,7 +31,9 @@
 // variable "onpcid" must be defined for each instance of objNPC in its' creation code
 
 iplaypokemongoeveryday = 0; // OKAY NOW I REALLY CANNOT
+// if player touches npc?
 rexplayspinballdotgif = 0;
+// sprite number
 </string>
           </argument>
         </arguments>
@@ -132,13 +134,16 @@ iplaypokemongoeveryday = place_meeting(x,y,objPlayer); //does this work?
             <string>draw_sprite(sprite_index,image_index,x,y); // I keep forgetting this needs to be added
 
 if (lockplr &amp; 1 == 1){ // only if text is finished
-if iplaypokemongoeveryday == 1{
-rexplayspinballdotgif += 0.75;
-draw_sprite(sprNPCIndicator,rexplayspinballdotgif,x,y-64);
-}else{
+if iplaypokemongoeveryday == 1
+{
+   rexplayspinballdotgif += 0.75;
+   draw_sprite(sprNPCIndicator,rexplayspinballdotgif,x,y-32);
+} else
+{
 rexplayspinballdotgif = 0;
 }
-}else{
+} else
+{
 rexplayspinballdotgif = 0; // IMPECCABLE!
 }
 </string>

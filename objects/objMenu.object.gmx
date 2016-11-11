@@ -29,6 +29,7 @@
 audio_stop_all();
 scrPlayAud(msc_menu,false);
 }
+scrGuiText(); //reload gui text
 </string>
           </argument>
         </arguments>
