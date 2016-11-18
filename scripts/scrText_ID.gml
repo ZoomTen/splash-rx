@@ -76,7 +76,7 @@ switch (argument0){
       msg[4] = "%"
       break;
    case 9:
-      msg[0] = "`R05I'm a little teapot, short and stout!";
+      msg[0] = "`R05Balonku ada lima . . . rupa-rupa warnanya . . .";
       msg[1] = "`R01Apa-apaan . . .";
       msg[2] = "`R05OH?! SIAPA KAU?!";
       msg[3] = "`R01Aku Splash . . .";
@@ -149,6 +149,42 @@ switch (argument0){
    case 19:
         msg[0] = "OOOOOOHHHHHHHH!!!!!!!!!!!";
         msg[1] = "%";
+        break;
+// more boss dialogs
+// even messy snorts
+   case 20:
+        msg[0] = "`R08MARY PIZZA POP!";
+        msg[1] = "`R01Ooooke, tidak kuduga . . .";
+        msg[2] = "%";
+        break;
+   case 21:
+        msg[0] = "`R09dent ur navel 100 tim s in sucsmeon u win.";
+        msg[1] = "`R01k";
+        msg[2] = "%";
+        break;
+   case 22:
+        msg[0] = "`R01Uh, anda Nyro bukan?";
+        msg[1] = "`R10Siapa Nyro? Saya Leif. Leif Thompson. Atau Leif si Macan Tutul.";
+        msg[2] = "`R01Oke, aku mulai melihat apa yang dimaksud si cerpelai itu. . ."
+        msg[3] = "%";
+        break;
+   case 23:
+        msg[0] = "`R01.";
+        msg[1] = "`R11.";
+        msg[2] = "%"
+        break;
+   case 24:
+        msg[0] = "`R01Apa-apaan. . .";
+        msg[1] = "`R12OH PASTI KAU SUKA, KAN?!";
+        msg[2] = "`R01. . .";
+        msg[3] = "`R12Benar, cucuku tidak menyukainya pula. AKU MEMBELINYA YANG COCOK BUAT ULANGTAHUNNYA!!!";
+        msg[4] = "`R01Ngawur ente. . .";
+        msg[5] = "%"
+        break;
+   case 25:
+        msg[0] = "`R13Aku senaaaang.";
+        msg[1] = "`R01.";
+        msg[2] = "%"
         break;
    default:
       msg[0] = ". . . Rupanya ini bukan nomor teks yang benar!";

@@ -36,7 +36,7 @@ vcomment = "Git"//"Git commit \#" + gitversion;
 // SOUND ENGINE INIT
 globalvar msc_menu, msc_tropical, msc_forest, msc_snow, 
 msc_boss, msc_debug, msc_sf, msc_fire, msc_pyroboss, msc_what,
-msc_desert;
+msc_desert, msc_night, msc_sky;
 
 // Initialize BGM ids
    msc_menu     =  audio_create_stream("msc/sndmenu.ogg");
@@ -52,6 +52,8 @@ msc_desert;
    msc_fire     =  audio_create_stream("msc/mscheatworld.ogg");
    msc_what     =  audio_create_stream("msc/mscmerrygoround.ogg");
    msc_desert   =  audio_create_stream("msc/mscdesert.ogg");
+   msc_night    =  audio_create_stream("msc/mscnight.ogg");
+   msc_sky      =  audio_create_stream("msc/mscsky.ogg");
 
 
 // GAME INIT

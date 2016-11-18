@@ -262,6 +262,7 @@
   <sprites name="sprites">
     <sprites name="solids">
       <sprite>sprites\sprClimb</sprite>
+      <sprite>sprites\sprclimb2</sprite>
       <sprite>sprites\sprWall</sprite>
       <sprite>sprites\sprite62</sprite>
       <sprite>sprites\sprMarker</sprite>
@@ -362,6 +363,7 @@
       <sprite>sprites\sprBoss4DG</sprite>
       <sprite>sprites\sprFridayOwnerDG</sprite>
       <sprite>sprites\sprSplashDG</sprite>
+      <sprite>sprites\sprPlaceholderDG</sprite>
       <sprite>sprites\sprFridayDG</sprite>
     </sprites>
   </sprites>

@@ -154,6 +154,42 @@ switch (argument0){
         msg[0] = "OOOOOOHHHHHHHH!!!!!!!!!!!";
         msg[1] = "%";
         break;
+// more boss dialogs
+// even messy snorts
+   case 20:
+        msg[0] = "`R08MARY PIZZA POP!";
+        msg[1] = "`R01This is not what I was expecting . . .";
+        msg[2] = "%";
+        break;
+   case 21:
+        msg[0] = "`R09dent ur navel 100 tim s in sucsmeon u win.";
+        msg[1] = "`R01k";
+        msg[2] = "%";
+        break;
+   case 22:
+        msg[0] = "`R01Wait, are you Nyro?";
+        msg[1] = "`R10Who's Nyro? I'm Leif. Leif Thompson. Or Leif the Leopard if you may.";
+        msg[2] = "`R01Okaay I think I see what that mink meant now . . ."
+        msg[3] = "%";
+        break;
+   case 23:
+        msg[0] = "`R01.";
+        msg[1] = "`R11.";
+        msg[2] = "%"
+        break;
+   case 24:
+        msg[0] = "`R01what.";
+        msg[1] = "`R12Don't you love it?!";
+        msg[2] = "`R01. . .";
+        msg[3] = "`R12It's right, my own grandson didn't take much of a LIKING for it either. I GOT HIM A MATCHING ONE FOR HIS BIRTHDAY!!!";
+        msg[4] = "`R01Verily, this conversation is impeccable.";
+        msg[5] = "%"
+        break;
+   case 25:
+        msg[0] = "`R13I really satisfy.";
+        msg[1] = "`R01WH-";
+        msg[2] = "%"
+        break;
 
 // fallback
 

@@ -127,6 +127,8 @@ if chrz &lt; mlen{   // While typing continues
    // ` is the command interpreter symbol
    // a backslash before it indicates a literal ` Nyro: `. ME USING THE ` AS AN APOSTROPHE(TM)
          if string_char_at(msg[mcur],chrz+2) == "R"{ // r for reactions!!! xdddd Nyro: yum
+         // if a 2 digit number follows "R" set the face ID to that
+         // might cause some problems if we have something like 100 snorts in the game wh
             fid = real(string_char_at(msg[mcur],chrz+3) + string_char_at(msg[mcur],chrz+4));
             chrz += 4;
             }

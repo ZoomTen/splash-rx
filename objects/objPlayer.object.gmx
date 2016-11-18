@@ -685,6 +685,7 @@ else{
 
 if place_meeting(x,y,objDoor)                                   // If reached goal
 {
+   if (lockplr != LNF){image_index=0;}
    lockplr = LNF;
    sprite_index = plrdissipatesprite;
    image_speed = plranimspeed;
@@ -694,8 +695,14 @@ if place_meeting(x,y,objDoor)                                   // If reached go
 
 if place_meeting(x,y,objDoorToBoss)                                   // If reached goal
 {
+   if (lockplr != LNF){image_index=0;}
    lockplr = LNF;
+   sprite_index = plrdissipatesprite;
+   image_speed = plranimspeed;
+   if tflag == 0{alarm[3]=10;tflag=1;}
    if !(instance_exists(objFadeOut)){tb = instance_create(0,0,objFadeOut);with tb{targetroom = rmBossIntro};splash_stage+=1;scrSave();}
+   //lockplr = LNF;
+   //if !(instance_exists(objFadeOut)){tb = instance_create(0,0,objFadeOut);with tb{targetroom = rmBossIntro};splash_stage+=1;scrSave();}
 }
 </string>
           </argument>
