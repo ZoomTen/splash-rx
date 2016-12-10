@@ -25,19 +25,23 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>lockplr = LNF;
-selmode = 0;
+            <string>lockplr = LNF; // lock player
 
-textp[0] = 40 // x
-textp[1] = 40 // y
+selmode = 0;   // select level
+               // 0 = spell select
+               // 1 = spell performance
 
-cxx = 1 // spell begin
+textp[0] = 40  // x
+textp[1] = 40  // y
 
-vk_alias = 32;
+cxx = 1 // spell move count. Start at 1
 
-zf = 0;
+vk_alias = 32; // for arrow sprites
 
-shrivelledechidnapuggle = 0;
+zf = 0; // JIGGLE(tm) animation
+
+shrivelledechidnapuggle = 0; // OKAY I CANNOT
+                             // = spell sprite to use
 </string>
           </argument>
         </arguments>
@@ -60,7 +64,7 @@ shrivelledechidnapuggle = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>zf = 0;
+            <string>zf = 0; // DEINTENSIFY(tm)
 </string>
           </argument>
         </arguments>
@@ -121,6 +125,7 @@ if selmode == 1{
          cxx += 1;
          zf = 1;
          alarm[0] = 10;
+         // If spell successfully performed
          if cxx &gt; currentSpell[0]{
             lockplr = NLNF;
             with (objPlayer){

@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>a = instance_create(x,y,objSpellBullet);with a{direction=0;}
+            <string>// YUMMY!!!!
+a = instance_create(x,y,objSpellBullet);with a{direction=0;}
 b = instance_create(x,y,objSpellBullet);with b{direction=30;}
 c = instance_create(x,y,objSpellBullet);with c{direction=60;}
 d = instance_create(x,y,objSpellBullet);with d{direction=90;}

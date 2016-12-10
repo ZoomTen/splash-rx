@@ -3,8 +3,8 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <datafiles number="44" name="datafiles">
-    <datafiles number="44" name="msc">
+  <datafiles number="46" name="datafiles">
+    <datafiles number="46" name="msc">
       <datafile>
         <name>msctropical.ogg</name>
         <exists>-1</exists>
@@ -159,6 +159,23 @@
         <filename>mschboss.ogg</filename>
       </datafile>
       <datafile>
+        <name>mscnight.ogg</name>
+        <exists>-1</exists>
+        <size>1133384</size>
+        <exportAction>2</exportAction>
+        <exportDir></exportDir>
+        <overwrite>0</overwrite>
+        <freeData>-1</freeData>
+        <removeEnd>0</removeEnd>
+        <store>0</store>
+        <ConfigOptions>
+          <Config name="Default">
+            <CopyToMask>9223372036854775807</CopyToMask>
+          </Config>
+        </ConfigOptions>
+        <filename>mscnight.ogg</filename>
+      </datafile>
+      <datafile>
         <name>mscfireboss.ogg</name>
         <exists>-1</exists>
         <size>1328002</size>
@@ -226,24 +243,24 @@
         </ConfigOptions>
         <filename>mscdesert.ogg</filename>
       </datafile>
+      <datafile>
+        <name>mscsky.ogg</name>
+        <exists>-1</exists>
+        <size>1403829</size>
+        <exportAction>2</exportAction>
+        <exportDir></exportDir>
+        <overwrite>0</overwrite>
+        <freeData>-1</freeData>
+        <removeEnd>0</removeEnd>
+        <store>0</store>
+        <ConfigOptions>
+          <Config name="Default">
+            <CopyToMask>9223372036854775807</CopyToMask>
+          </Config>
+        </ConfigOptions>
+        <filename>mscsky.ogg</filename>
+      </datafile>
     </datafiles>
-    <datafile>
-      <name>version.txt</name>
-      <exists>-1</exists>
-      <size>7</size>
-      <exportAction>2</exportAction>
-      <exportDir></exportDir>
-      <overwrite>0</overwrite>
-      <freeData>-1</freeData>
-      <removeEnd>0</removeEnd>
-      <store>0</store>
-      <ConfigOptions>
-        <Config name="Default">
-          <CopyToMask>9223372036854775807</CopyToMask>
-        </Config>
-      </ConfigOptions>
-      <filename>version.txt</filename>
-    </datafile>
   </datafiles>
   <NewExtensions/>
   <sounds name="sound">
@@ -268,10 +285,6 @@
       <sprite>sprites\sprMarker</sprite>
       <sprite>sprites\sprDeath</sprite>
       <sprite>sprites\sprite19</sprite>
-      <sprite>sprites\zza</sprite>
-      <sprite>sprites\zzb</sprite>
-      <sprite>sprites\zzc</sprite>
-      <sprite>sprites\zzd</sprite>
       <sprite>sprites\OH</sprite>
       <sprite>sprites\sprite49</sprite>
     </sprites>
@@ -442,7 +455,6 @@
     <objects name="obstacles">
       <object>objects\objBigWall</object>
       <object>objects\objWall</object>
-      <object>objects\objzzb</object>
       <object>objects\objWallBG</object>
       <object>objects\objClimb</object>
       <object>objects\objMarker</object>

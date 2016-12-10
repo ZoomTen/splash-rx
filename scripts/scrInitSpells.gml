@@ -6,9 +6,12 @@
 // The idea is that spells are triggered using a combination
 // of arrow key presses while in some sort of 'Spellcast' mode
 // (accessed by pressing C during a boss, when a 'powermeter' is
-//  filled up and at least one spell unlocked)
+// filled up and at least one spell unlocked)
 
-// Could be either:
+// Splash could probably receive spells by receiving a yummy
+// spell book from an old cranky snort wh
+
+// The possibilities can be either:
 /*
             spell A
                U
@@ -31,18 +34,21 @@
 
 globalvar numSpells, unlockedSpells, spellEnable,
 spellA, spellB, spellC, spellD, currentSpell,
-currentSpellNum; //extra variable(tm)
-
-   numSpells = 4; // starts from 1
-   unlockedSpells = 0; // initialization value, don't change
-   currentSpellNum = 0;
-   spellEnable[0] = true; // unlocked moveset 1 (up)
-   spellEnable[1] = true; // unlocked moveset 2 (down)
-   spellEnable[2] = false; // unlocked moveset 3 (left)
-   spellEnable[3] = false; // unlocked moveset 4 (right)
+currentSpellNum;
+   numSpells       = 4;     // starts from 1
+   unlockedSpells  = 0;     // initialization value, don't change
+   currentSpellNum = 0;     // current spell to use
+   
+   spellEnable[0]  = true;  // unlocked moveset 1 (up)
+   spellEnable[1]  = true;  // unlocked moveset 2 (down)
+   spellEnable[2]  = false; // unlocked moveset 3 (left)
+   spellEnable[3]  = false; // unlocked moveset 4 (right)
    
    // check enabled spells and set the # of unlocked spells accordingly
    for (i=0; i<=numSpells-1; i+=1){if spellEnable[i] == true{unlockedSpells += 1;}}
+   
+   // I might need to move that somewhere else so an object can call it and
+   // update the number of spells
 
 // A [up]
 // fire spell?

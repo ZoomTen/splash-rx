@@ -1,44 +1,59 @@
 // Desc: Game initialization script
 // No arguments
 
+// Main game variables
+globalvar splash_world, splash_stage, splash_lives, splash_hits,
+splash_hits_max, hyptaur, tscale, worldname, splash_score, splash_ammo, currentsfx, currentmus,
+debugm, splash_end, is_boss;
+
+   debugm = true;   // !! Switch to enable debug mode !!
+   
+   splash_world     = w_start;
+   splash_stage    = 0;
+   splash_hits     = 0;
+   splash_hits_max = 3;
+   splash_score    = 0;
+   splash_ammo     = 0;
+   splash_lives    = default_splash_lives;
+   hyptaur         = 0; // debug mode active?
+   tscale          = 0; // camera zoom
+   
+   currentsfx = 0;
+   currentmus = 0;
+   
+   splash_end = 0;  // 0 = not beaten yet, 1 = good ending, 2 = bad ending
+   is_boss = false; // is a boss level?
+   
 var i, j; // counter snorts wHY
 var PLACEHOLDER_ROOM;
-PLACEHOLDER_ROOM = room27;
+   PLACEHOLDER_ROOM = room27;
 
 globalvar langsel, langsels; // language select
-langsels = 1;
-langsel = 0; // 0 = english
-             // 1 = indonesian
+   langsels = 1;
+   langsel  = 0; // 0 = english
+                 // 1 = indonesian
              
-             // other languages?
-             // 2 = french?
-             // 3 = spanish?
-             // 4 = swedish?!?!?!? wh
+                 // other languages?
+                 // 2 = french?
+                 // 3 = spanish?
+                 // 4 = swedish?!?!?!? wh
              
 // Version number defines
 globalvar vmaj, vmin, vrev, buildnumber, vcomment, gitversion;
-
-//var glhf;
-
-//glhf = file_text_open_read("version.txt");
-//gitversion = file_text_read_string(glhf);
-//file_text_close(glhf);
-
-vmaj = "2"; // Major version
-vmin = "9"; // Minor version
-vrev = "2"; // Revision
+   vmaj = "2"; // Major version
+   vmin = "9"; // Minor version
+   vrev = "2"; // Revision
+   
 // calculate build number
-buildnumber = string(date_get_year(GM_build_date)-2016) + string_replace_all(string_format(date_get_month(GM_build_date), 2, 0)," ","0") + string_replace_all(string_format(date_get_day(GM_build_date), 2, 0)," ","0");
-vcomment = "Git"//"Git commit \#" + gitversion;
+   buildnumber = string(date_get_year(GM_build_date)-2016) + string_replace_all(string_format(date_get_month(GM_build_date), 2, 0)," ","0") + string_replace_all(string_format(date_get_day(GM_build_date), 2, 0)," ","0");
+   vcomment = "git"
 
 
 
-// SOUND ENGINE INIT
+// bgm init
 globalvar msc_menu, msc_tropical, msc_forest, msc_snow, 
 msc_boss, msc_debug, msc_sf, msc_fire, msc_pyroboss, msc_what,
 msc_desert, msc_night, msc_sky;
-
-// Initialize BGM ids
    msc_menu     =  audio_create_stream("msc/sndmenu.ogg");
    msc_tropical =  audio_create_stream("msc/msctropical.ogg");
    msc_forest   =  audio_create_stream("msc/sndmusic1.ogg");
@@ -54,9 +69,6 @@ msc_desert, msc_night, msc_sky;
    msc_desert   =  audio_create_stream("msc/mscdesert.ogg");
    msc_night    =  audio_create_stream("msc/mscnight.ogg");
    msc_sky      =  audio_create_stream("msc/mscsky.ogg");
-
-
-// GAME INIT
 
 /*
    w_menus    = 0;  -> Menus
@@ -86,12 +98,10 @@ msc_desert, msc_night, msc_sky;
    w_extra    = 99; -> Secret Boss World
 */
    
-// Initialize room array.
+// room init
 globalvar rm;
-
-  // for (i=0;i<99;i+=1){for(j=0;j<99;j+=1){rm[i,j]=PLACEHOLDER_ROOM;}} // do I need to do this?
-   
-   rm[w_menus,0] = rmLogo; // WHY WAS THIS SET TO RMINIT I CAN'T
+// for (i=0;i<99;i+=1){for(j=0;j<99;j+=1){rm[i,j]=PLACEHOLDER_ROOM;}} // do I need to do this?
+   rm[w_menus,0] = rmLogo;
    rm[w_menus,1] = rmMenu;
    rm[w_menus,2] = rmOptions;
    rm[w_menus,3] = rmLevSel;
@@ -100,7 +110,7 @@ globalvar rm;
    
    rm[w_start,0] = PLACEHOLDER_ROOM;
    
-//   rm[w_forest,0] = room0; // todo: make this a normal stage
+// rm[w_forest,0] = room0; // todo: make this a normal stage
    rm[w_forest,0] = room1;
    rm[w_forest,1] = room2;
    rm[w_forest,2] = room3;
@@ -108,7 +118,6 @@ globalvar rm;
    rm[w_forest,4] = room4;
    rm[w_forest,5] = rmBoss1;
    
-//   rm[w_tropical,0] = room5; // todo: come up with another transition snort
    rm[w_tropical,0] = room6;
    rm[w_tropical,1] = room7;
    rm[w_tropical,2] = room8;
@@ -130,8 +139,6 @@ globalvar rm;
    
    rm[w_autumn,0] = PLACEHOLDER_ROOM;
    
-//   rm[w_snow,0] = room11; // todokete Nyro: Wh-
-                            // Zy: FREAKING SIIVAGUNNER
    rm[w_snow,0] = room12;
    rm[w_snow,1] = room13;
    rm[w_snow,2] = room14;
@@ -149,7 +156,7 @@ globalvar rm;
    
    rm[w_future,0] = PLACEHOLDER_ROOM;
    
-   rm[w_ethan,0] = PLACEHOLDER_ROOM; // I'M ETHAN BRADBERRY!!!! wh
+   rm[w_ethan,0] = PLACEHOLDER_ROOM; // I'M ETHAN BRADBERRY(tm)
    
    rm[w_clock,0] = room46;
    
@@ -172,25 +179,6 @@ globalvar rm;
    rm[w_extra,0] = rmBlanketovania;
    rm[w_extra,1] = rmHypppp;
    rm[w_extra,2] = rmDuke;
-   
-// Initialize snort variables.
-globalvar splash_world, splash_stage, splash_lives, splash_hits,
-splash_hits_max, hyptaur, tscale, worldname, splash_score, splash_ammo, currentsfx, currentmus,
-debugm, splash_end, is_boss;
-   splash_world = w_start;
-   splash_stage = 0;
-   splash_hits = 0;
-   splash_hits_max = 3;
-   splash_score = 0;
-   splash_ammo = 0;
-   splash_lives = default_splash_lives;
-   hyptaur      = 0; // aka debug
-   tscale       = 0; // camera zoom
-   currentsfx = 0;
-   currentmus = 0;
-   debugm = true;
-   splash_end = 0; //0 = not beat, 1 = good beat, 2 = bad beat
-   is_boss = false; // is a boss level?
    
    for (i=0; i<99; i+=1){worldname[i] = "World undefined";}
    
@@ -222,41 +210,37 @@ debugm, splash_end, is_boss;
    
 // dialog variables
 globalvar msg, fid, ckey, skey, lockplr, ttype, tys;
-   msg = 0;          // current message
-   fid = 0;          // dialogue face id
-   ckey = ord("Z");  // continue key --> dialogs
-   skey = ord("X");  // skip key     --> dialogs
-   lockplr = NLNF;   // lock player while message
-                      // 0 = not locked, not finished [NLNF]
-                      // 1 = not locked, finished [NLF]
-                      // 2 = locked, not finished [LNF]
-                      // 3 = locked, finished [LF]
-   ttype = 0;     // text typer... type...? Not that I'd ever use it anyway.
-   tys = 0;       // text typer variables
+   msg     = 0;         // current message ID
+   fid     = 0;         // dialogue face ID
+   ckey    = ord("Z");  // continue key --> dialogs
+   skey    = ord("X");  // skip key     --> dialogs
+   
+   lockplr = NLNF;      // lock player while message
+                        // 0 = not locked, not finished [NLNF]
+                        // 1 = not locked, finished [NLF]
+                        // 2 = locked, not finished [LNF]
+                        // 3 = locked, finished [LF]
+                        
+   ttype   = 0;         // text typer... type...? Not that I'd ever use it anyway.
+   tys     = 0;         // text typer variables
 
 globalvar fadetype, fadespeed;
-   fadetype = 1;  // Fade type. 0 = basic fade, 1 = reveal (transition)
+   fadetype  = 1;   // Fade type. 0 = basic fade, 1 = reveal (transition)
    fadespeed = 0.8; // Fade speed
    
+// Surface snorts
 globalvar resx, resy, sc;
    resx = 800;   // Width of game window
    resy = 600;   // Height of game window
-   sc = 2;     // Game window scaling
+   sc = 2;       // Game window scaling
    window_set_size(resx,resy);
    surface_resize(application_surface,resx,resy);
    display_reset(0,false);
-   
 
-   
-globalvar eventtrigger;
-   eventtrigger = 0; // triggered(tm)(tm)
-
-   // move();   
-   // move();   
-   // move();   
-   // wh-
-   
-globalvar guitext;  
+globalvar eventtrigger, guitext, powermeter;
+   eventtrigger = 0; // I think this is used for NPCs
    scrInitNPCVars();
-   
    scrInitSpells();
+   
+// powermeter. If equal to 1 you can perform spells
+   if debugm == false{powermeter = 0;}else{powermeter = 1;}
