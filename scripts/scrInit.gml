@@ -53,22 +53,23 @@ globalvar vmaj, vmin, vrev, buildnumber, vcomment, gitversion;
 // bgm init
 globalvar msc_menu, msc_tropical, msc_forest, msc_snow, 
 msc_boss, msc_debug, msc_sf, msc_fire, msc_pyroboss, msc_what,
-msc_desert, msc_night, msc_sky;
-   msc_menu     =  audio_create_stream("msc/sndmenu.ogg");
-   msc_tropical =  audio_create_stream("msc/msctropical.ogg");
-   msc_forest   =  audio_create_stream("msc/sndmusic1.ogg");
-   msc_snow     =  audio_create_stream("msc/mscwinter.ogg");
-   msc_boss     =  audio_create_stream("msc/sndboss.ogg");
-   msc_debug    =  audio_create_stream("msc/mschnz.ogg");
-   msc_sf       =  audio_create_stream("msc/mscsf.ogg");
-   msc_nboss    =  audio_create_stream("msc/mscnboss.ogg");
-   msc_hboss    =  audio_create_stream("msc/mschboss.ogg");
-   msc_pyroboss =  audio_create_stream("msc/mscfireboss.ogg");
-   msc_fire     =  audio_create_stream("msc/mscheatworld.ogg");
-   msc_what     =  audio_create_stream("msc/mscmerrygoround.ogg");
-   msc_desert   =  audio_create_stream("msc/mscdesert.ogg");
-   msc_night    =  audio_create_stream("msc/mscnight.ogg");
-   msc_sky      =  audio_create_stream("msc/mscsky.ogg");
+msc_desert, msc_night, msc_sky, msc_impeccable;
+   msc_menu       =  audio_create_stream("msc/sndmenu.ogg");
+   msc_tropical   =  audio_create_stream("msc/msctropical.ogg");
+   msc_forest     =  audio_create_stream("msc/sndmusic1.ogg");
+   msc_snow       =  audio_create_stream("msc/mscwinter.ogg");
+   msc_boss       =  audio_create_stream("msc/sndboss.ogg");
+   msc_debug      =  audio_create_stream("msc/mschnz.ogg");
+   msc_sf         =  audio_create_stream("msc/mscsf.ogg");
+   msc_nboss      =  audio_create_stream("msc/mscnboss.ogg");
+   msc_hboss      =  audio_create_stream("msc/mschboss.ogg");
+   msc_pyroboss   =  audio_create_stream("msc/mscfireboss.ogg");
+   msc_fire       =  audio_create_stream("msc/mscheatworld.ogg");
+   msc_what       =  audio_create_stream("msc/mscmerrygoround.ogg");
+   msc_desert     =  audio_create_stream("msc/mscdesert.ogg");
+   msc_night      =  audio_create_stream("msc/mscnight.ogg");
+   msc_sky        =  audio_create_stream("msc/mscsky.ogg");
+   msc_impeccable =  audio_create_stream("msc/mscimpeccable.ogg");
 
 /*
    w_menus    = 0;  -> Menus
