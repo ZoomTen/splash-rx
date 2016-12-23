@@ -186,6 +186,11 @@ switch (argument0){
         msg[1] = "`R01.";
         msg[2] = "%"
         break;
+   case 26:
+        msg[0] = "`R01Apa-apaan ini!!!";
+        msg[1] = "%"
+        break;
+        
    default:
       msg[0] = ". . . Rupanya ini bukan nomor teks yang benar!";
       msg[1] = "%";

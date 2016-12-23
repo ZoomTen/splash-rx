@@ -190,6 +190,10 @@ switch (argument0){
         msg[1] = "`R01WH-";
         msg[2] = "%"
         break;
+   case 26:
+        msg[0] = "`R01What the heck!!!";
+        msg[1] = "%"
+        break;
 
 // fallback
 
