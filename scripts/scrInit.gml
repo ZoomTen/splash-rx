@@ -181,6 +181,7 @@ globalvar rm;
    rm[w_extra,0] = rmBlanketovania;
    rm[w_extra,1] = rmHypppp;
    rm[w_extra,2] = rmDuke;
+   rm[w_extra,2] = rmCheeseGuy;
    
    for (i=0; i<99; i+=1){worldname[i] = "World undefined";}
    

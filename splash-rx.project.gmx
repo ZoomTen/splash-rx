@@ -360,6 +360,7 @@
       <sprite>sprites\sprPyro</sprite>
       <sprite>sprites\sprite60</sprite>
       <sprite>sprites\sprite61</sprite>
+      <sprite>sprites\sprCheeseGuy</sprite>
       <sprite>sprites\sprSnowball</sprite>
       <sprite>sprites\sprFireball</sprite>
     </sprites>
@@ -539,6 +540,7 @@
       <object>objects\objHypBoss</object>
       <object>objects\objFakePlatform</object>
       <object>objects\objBlanketon</object>
+      <object>objects\objCheeseGuy</object>
       <object>objects\objBlanketonCtrl</object>
     </objects>
     <objects name="transitions">
@@ -636,6 +638,7 @@
       <room>rooms\rmBlanketovania</room>
       <room>rooms\rmHypppp</room>
       <room>rooms\rmDuke</room>
+      <room>rooms\rmCheeseGuy</room>
     </rooms>
   </rooms>
   <constants number="32">
