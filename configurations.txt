@@ -2,6 +2,10 @@
 !! Append this to splash-rx.project.gmx
 !! before <help>
 
+!! Use notepad to open the project file
+!! ANY time the project config changes
+!! Update this file as well!
+
   <constants number="32">
     <constant name="NLNF">0</constant>
     <constant name="NLF">1</constant>
