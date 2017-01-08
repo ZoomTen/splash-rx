@@ -3,7 +3,7 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>999999</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -25,31 +25,49 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if file_exists("splashrx.ini"){
-   ini_open("splashrx.ini");
-   if ini_key_exists("ops","lang"){
-      room_goto_next();
-      ini_close();
-   }
-   ini_close();
-}
-selecc = langsel;
-spacing = 32;
-selmax = 1;
-f = 0;
-here = 0;
-
-langname[0] = "English";
-langname[1] = "Indonesian";
-
+            <string>alarm[1]=5;
+p=0;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>p=1;
+splash_world = w_start;
+splash_stage = 0;
+splash_hits = 0;
+splash_score = 0;
+splash_ammo = 0;
+splash_lives = default_splash_lives;
+currentsfx = 0;
+currentmus = 0;
 audio_stop_all();
 instance_create(0,0,objFadeIn);
+alarm[0]=180;
+scrPlayAud(snd_imhome,true);
 </string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="3" enumb="0">
+    <event eventtype="2" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -66,43 +84,14 @@ instance_create(0,0,objFadeIn);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if keyboard_check_pressed(vk_left){
-   if selecc == 0{
-      selecc = selmax;
-      }
-   else{
-      selecc -= 1;
-      }
-}
-if keyboard_check_pressed(vk_right){
-   if selecc == selmax{
-      selecc = 0;
-      }
-   else{
-      selecc += 1;
-      }
-}
-
-if keyboard_check(ckey){
-   f = 1;
-   }
-   
-if f == 1{
-   f = 2;
-   langsel = selecc;
-   scrGuiText(); // reload GUI text
-   scrSaveOps();
-   tb = instance_create(0,0,objFadeOut);
-   with tb{targetroom = rmLogo};
-}
-
-here += 10/60;
+            <string>tb = instance_create(0,0,objFadeOut);
+with tb{targetroom = rmMenu};
 </string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="8" enumb="64">
+    <event eventtype="8" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -119,28 +108,7 @@ here += 10/60;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_set_color(c_black);
-draw_set_alpha(0.7);
-draw_roundrect(x-200,y-15,x+200,y+(spacing*5),false);
-
-draw_set_color(c_white);
-draw_roundrect(x-200,y+(spacing*1),x+200,y+(spacing*2),false);
-
-draw_set_alpha(1);
-draw_set_halign(fa_center);
-draw_set_font(font2);
-draw_text(x,y+(spacing*0),"Language Select");
-
-draw_set_color(c_black);
-draw_text(x,y+(spacing*1.05),langname[selecc]);
-
-draw_set_color(c_white);
-draw_sprite(arrowlangsel_r,here,x-188,y+(spacing*1.46));
-draw_sprite(arrowlangsel_l,here,x+188,y+(spacing*1.46));
-
-draw_text(x,y+(spacing*2),"Press the left and arrow keys to choose");
-draw_text(x,y+(spacing*3),"Press Z to continue");
-draw_set_halign(fa_left);
+            <string>if p==1{draw_sprite(sprSplashScreen,0,0,0);}
 </string>
           </argument>
         </arguments>

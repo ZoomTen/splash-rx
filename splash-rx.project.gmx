@@ -340,9 +340,8 @@
       <sprite>sprites\sprite49</sprite>
     </sprites>
     <sprites name="npc">
-      <sprite>sprites\sprFridayOwner</sprite>
-      <sprite>sprites\sprFriday</sprite>
       <sprite>sprites\sprNPCIndicator</sprite>
+      <sprite>sprites\sprFridayCaracal</sprite>
       <sprite>sprites\sprNyro</sprite>
     </sprites>
     <sprites name="enemies">
@@ -352,7 +351,15 @@
       <sprite>sprites\sprEnemyPH</sprite>
       <sprite>sprites\sprFireballUp</sprite>
     </sprites>
-    <sprite>sprites\sprActions</sprite>
+    <sprites name="ancient">
+      <sprite>sprites\sprFriday</sprite>
+      <sprite>sprites\sprFridayOwner</sprite>
+      <sprite>sprites\sprActions</sprite>
+      <sprite>sprites\sprNew</sprite>
+      <sprite>sprites\sprLoad</sprite>
+      <sprite>sprites\sprOptions</sprite>
+      <sprite>sprites\sprLevSel</sprite>
+    </sprites>
     <sprites name="fades">
       <sprite>sprites\sprite30</sprite>
     </sprites>
@@ -381,10 +388,6 @@
       <sprite>sprites\sprSnowball</sprite>
       <sprite>sprites\sprFireball</sprite>
     </sprites>
-    <sprite>sprites\sprNew</sprite>
-    <sprite>sprites\sprLoad</sprite>
-    <sprite>sprites\sprOptions</sprite>
-    <sprite>sprites\sprLevSel</sprite>
     <sprites name="neosplash">
       <sprite>sprites\sprSplashJumpLeft</sprite>
       <sprite>sprites\sprSplashJumpRight</sprite>
@@ -400,21 +403,26 @@
       <sprite>sprites\sprSplashWallLeft</sprite>
       <sprite>sprites\sprSplashRight</sprite>
     </sprites>
-    <sprite>sprites\sprFridayCaracal</sprite>
-    <sprite>sprites\sprBorder</sprite>
-    <sprite>sprites\sprGUIFontBig</sprite>
-    <sprite>sprites\sprGUIFont</sprite>
-    <sprite>sprites\sprArrow</sprite>
-    <sprite>sprites\sprLOGO</sprite>
-    <sprite>sprites\sprOverlaySpells1</sprite>
-    <sprite>sprites\sprOverlaySpells2</sprite>
-    <sprite>sprites\sprite50</sprite>
-    <sprite>sprites\sprFont</sprite>
-    <sprite>sprites\sprHypBossRight</sprite>
-    <sprite>sprites\sprHypBossLeft</sprite>
-    <sprite>sprites\sprSplashScreen</sprite>
-    <sprite>sprites\sprLivesSnort</sprite>
-    <sprite>sprites\sprFont2</sprite>
+    <sprites name="gfx">
+      <sprite>sprites\arrowlangsel_l</sprite>
+      <sprite>sprites\arrowlangsel_r</sprite>
+      <sprite>sprites\sprBorder</sprite>
+      <sprite>sprites\sprGUIFontBig</sprite>
+      <sprite>sprites\sprGUIFont</sprite>
+      <sprite>sprites\sprFont</sprite>
+      <sprite>sprites\sprArrow</sprite>
+      <sprite>sprites\sprHypBossRight</sprite>
+      <sprite>sprites\sprHypBossLeft</sprite>
+      <sprite>sprites\sprSplashScreen</sprite>
+      <sprite>sprites\sprLOGO</sprite>
+      <sprite>sprites\sprFont2</sprite>
+      <sprite>sprites\sprLivesSnort</sprite>
+      <sprite>sprites\sprite50</sprite>
+    </sprites>
+    <sprites name="spells">
+      <sprite>sprites\sprOverlaySpells1</sprite>
+      <sprite>sprites\sprOverlaySpells2</sprite>
+    </sprites>
     <sprites name="spellwaves">
       <sprite>sprites\sprSpellFire</sprite>
       <sprite>sprites\sprSpellIce</sprite>
@@ -571,7 +579,7 @@
       <object>objects\objTitleMenu</object>
       <object>objects\objLogo</object>
       <object>objects\objNewGameSnort</object>
-      <object>objects\objSplash</object>
+      <object>objects\objDevLogo</object>
       <object>objects\objStart</object>
       <object>objects\objOptions</object>
       <object>objects\objLevSel</object>
