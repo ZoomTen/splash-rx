@@ -194,6 +194,23 @@ switch (argument0){
         msg[0] = "`R01What the heck!!!";
         msg[1] = "%"
         break;
+// Ranger
+   case 27:
+        msg[0] = "`R02Hey, good luck on your quest! But be careful of those stock Game Maker snakes!";
+        msg[1] = "`R01A- WHAT?!"; 
+        msg[2] = "`R02I BROKE THE FOURTH WALL!!!!!"; 
+        msg[3] = "`R01FOURTH WALL WHAT OKAY."; 
+        msg[4] = "`R02."; 
+        msg[5] = "`R01k"; 
+        msg[6] = "%";
+        break;
+        
+// Digger
+   case 28:
+        msg[0] = "`R02*shrivels* amazing";
+        msg[1] = "`R01o  k     a       y"; 
+        msg[2] = "%";
+        break;        
 
 // fallback
 

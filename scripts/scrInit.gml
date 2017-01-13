@@ -152,7 +152,7 @@ globalvar rm;
    
    rm[w_cave,0] = room45;
    
-   rm[w_night,0] = PLACEHOLDER_ROOM;
+   rm[w_night,0] = room51;
    
    rm[w_spooky,0] = PLACEHOLDER_ROOM;
    
@@ -162,7 +162,7 @@ globalvar rm;
    
    rm[w_clock,0] = room46;
    
-   rm[w_sky,0] = PLACEHOLDER_ROOM;
+   rm[w_sky,0] = room52;
    
    rm[w_meadow,0] = PLACEHOLDER_ROOM;
    
@@ -187,7 +187,7 @@ globalvar rm;
    
    worldname[w_menus] = "Why are you even here?";
    worldname[w_start] = "Start";
-   worldname[w_forest] = "Snort Forest";
+   worldname[w_forest] = "Forest";
    worldname[w_tropical] = "Lush Tropical";
    worldname[w_fire] = "Red Hot";
    worldname[w_desert] = "Snort Desert";

@@ -373,6 +373,7 @@
       <sprite>sprites\sprPack</sprite>
       <sprite>sprites\sprWeapon</sprite>
       <sprite>sprites\sprite73</sprite>
+      <sprite>sprites\sprBoxes</sprite>
     </sprites>
     <sprites name="bosses">
       <sprite>sprites\sprBoss1</sprite>
@@ -539,10 +540,14 @@
       <object>objects\objNotASnake</object>
     </objects>
     <objects name="items">
+      <object>objects\objGemSpawner</object>
+      <object>objects\objTonsofGems</object>
       <object>objects\objRubee</object>
       <object>objects\objPackSpawner</object>
       <object>objects\objPack</object>
       <object>objects\obj1up</object>
+      <object>objects\objMarkerTransition</object>
+      <object>objects\objMarkerWTF</object>
       <object>objects\objMarker1</object>
       <object>objects\objMarkerToBoss</object>
       <object>objects\objDoor</object>
@@ -635,6 +640,12 @@
       <room>rooms\room42</room>
       <room>rooms\room33</room>
     </rooms>
+    <rooms name="world_desert">
+      <room>rooms\room43</room>
+    </rooms>
+    <rooms name="world_prehistoric">
+      <room>rooms\room44</room>
+    </rooms>
     <rooms name="world_snow">
       <room>rooms\room11</room>
       <room>rooms\room12</room>
@@ -644,17 +655,17 @@
       <room>rooms\room19</room>
       <room>rooms\rmBoss3</room>
     </rooms>
-    <rooms name="world_desert">
-      <room>rooms\room43</room>
-    </rooms>
-    <rooms name="world_prehistoric">
-      <room>rooms\room44</room>
-    </rooms>
     <rooms name="world_cave">
       <room>rooms\room45</room>
     </rooms>
+    <rooms name="world_night">
+      <room>rooms\room51</room>
+    </rooms>
     <rooms name="world_clock">
       <room>rooms\room46</room>
+    </rooms>
+    <rooms name="world_sky">
+      <room>rooms\room52</room>
     </rooms>
     <rooms name="world_end">
       <room>rooms\rmEnd</room>

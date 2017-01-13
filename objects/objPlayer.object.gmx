@@ -43,7 +43,8 @@ if !(instance_exists(objFollower)){
 instance_create(x,y,objFollower);
 }
 pdir = 2;                          // 0 = nowhere. 1 = left. 2 = right.
-jflag = 0;                         // jump flag
+jflag = 0;                         // jump timer
+andisayjump = 0;                   // jump flag
 tscale = sc;                       // per room scale
 l=0;
 showdialogvars = 0;
@@ -483,6 +484,10 @@ if !(lockplr &amp; 2 == 2){
                                                                 // clown...wait, you already are one!!!
    
 /// Keyboard control code ///
+      if !(place_free(x,y+1)){
+      andisayjump = 0;
+      }
+      
       if keyboard_check(vk_left)                                // Left event
       {
          pdir = 1;
@@ -494,16 +499,25 @@ if !(lockplr &amp; 2 == 2){
          pdir = 2;
          if place_free(x+playerhspeed,y){x += playerhspeed;}
       }
-      
+
       if keyboard_check(vk_up)                                  // Up event [Jump / climb up]
       {
          if place_meeting(x,y,objClimb)
          {
             if place_free(x,y-playerclimb){y -= playerclimb;}
          }
-         else
-         {
-            if !(place_free(x,y+1)){vspeed = -playerjump;}
+         else{
+            if !(place_free(x,y+1)){
+               vspeed = -playerjump;
+               andisayjump = 1;
+            }
+         }
+      }
+      
+      if keyboard_check_released(vk_up) // hacky
+      {
+         if (andisayjump = 1){
+            vspeed = vspeed / 2;
          }
       }
       
@@ -556,7 +570,7 @@ if !(lockplr &amp; 2 == 2){
       else
       {
       
-      if place_free(x,y+1)                                      // If freefalling
+      if place_free(x,y+2)                                      // If freefalling
       {
         if jflag == 0
         {
@@ -669,8 +683,7 @@ if !(lockplr &amp; 2 == 2){
       }
   */
       
-}
-else{
+}else{
    hspeed = 0;
    if place_free(x,y+1){
       gravity = playergrav;
@@ -1489,6 +1502,7 @@ display_reset(0,false);
             <string>// debug data
 if debugm == true{
 if hyptaur == 1{
+   draw_set_halign(fa_left);
    draw_set_alpha(1);
    draw_set_color(c_white);
    draw_set_font(font1);
@@ -1504,6 +1518,7 @@ if hyptaur == 1{
    draw_text(0,146,"NPC text limit : " + string(npctxlimit[collidednpcid]));
    draw_text(0,158,"NPC talked to? : " + string(npctalkedto[collidednpcid]));
    }
+   draw_text(0,160, string(andisayjump));
 }
 }
 </string>
