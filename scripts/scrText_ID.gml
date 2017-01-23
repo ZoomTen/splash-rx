@@ -39,7 +39,7 @@ switch (argument0){
       msg[7] = "%";
       break;
    case 3:
-      msg[0] = "Selamat datang di versi demo Splash Rescues Friday RX! Ini adalah remake (buat ulang) sebuah game jadul oleh Nyro Fletcher [Silver Wolf Games].##Akan kami tambahkan dunia-dunia baru, musuh-musuh baru, dan lain-lain. Untuk sementara, nikmati saja ular-ular gak jelas dan bos-bos yang tampilnya beda ;)##PETUNJUK:##Tekan Z untuk melanjutkan teks kalau ada tanda panah muncul.#Tekan X untuk melompati teks."
+      msg[0] = "Selamat datang di versi demo Splash Rescues Friday RX! Ini adalah remake (buat ulang) sebuah game jadul oleh Nyro.##Akan kami tambahkan dunia-dunia baru, musuh-musuh baru, dan lain-lain. Untuk sementara, nikmati saja ular-ular gak jelas dan bos-bos yang tampilnya beda ;)##PETUNJUK:##Tekan Z untuk melanjutkan teks kalau ada tanda panah muncul.#Tekan X untuk melompati teks."
       msg[1] = "Gunakan tombol arah untuk bergerak.#<atas> lompat#<kiri> lari ke kiri#<kanan> lari ke kanan#<bawah> gak ngapa-ngapain :v##Fungsi tombol atas dan bawah berubah jika anda berada di tangga.#<atas> naik#<bawah> turun##Karena kemungkinan bug, anda mungkin stuck di dinding. (Jika yang demikian terjadi, tekan Q)##Gerakan lain#<spasi> tembakkan shuriken#*Catatan* Anda perlu mengambil ammo pack untuk menggunakannya!!!";
       msg[2] = "Es tajam akan melukaimu, sedangkan yang terlihat agak lembut tidak akan melukaimu.##Duri dan ular akan melukaimu, tapi anda bisa menembaki atau menginjak ular.##4 kali kena, anda mati. Carilah kepala untuk memulihkan."
       msg[3] = "%";

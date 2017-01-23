@@ -41,7 +41,7 @@ switch (argument0){
       msg[7] = "%";
       break;
    case 3:
-      msg[0] = "Welcome to a demo of Splash Rescues Friday RX! This is essentially a '''remake''' of an older game by Nyro Fletcher [Silver Wolf Games].##It will have new worlds, enemies, bosses and a load of other stuff (totally). But for now, just deal with snakes and yummy clipart enemies. ;)##INSTRUCTIONS:##Press Z to continue text when an arrow appears#Press X to skip text."
+      msg[0] = "Welcome to a demo of Splash Rescues Friday RX! This is essentially a '''remake''' of an older game by Nyro.##It will have new worlds, enemies, bosses and a load of other stuff (totally). But for now, just deal with snakes and yummy clipart enemies. ;)##INSTRUCTIONS:##Press Z to continue text when an arrow appears#Press X to skip text."
       msg[1] = "Use the arrow keys to move.#<up> jump#<left> run left#<right> run right#<down> crouch##Up and down keys will change if on a ladder.#<up> climb up#<down> climb down##Be careful though, you might get stuck on a wall. (In that case, press Q to restart the level)##Other moves#<space> shoot little grey ninja weapons#*Note* You need to collect a pack of weapons to use them!!!";
       msg[2] = "Jump up at a wall and hold left/right arrow key#(depending which way you're facing) to#glide up a wall.##Sharp-looking icicles will hurt you, softer#looking ones won't.##Spikes and snakes hurt you, but you can jump#on or shoot the snakes.##You die in 4 hits, and if you do, you lose all your ammo. Collecting yummy Splash heads will restore your health a little (totally makes sense)."
       msg[3] = "%";
