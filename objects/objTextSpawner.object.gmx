@@ -91,12 +91,7 @@ soundt = true; // typing sounds Nyro: In a stream? Wh Zy: LOL OH MY GOD!
           <argument>
             <kind>1</kind>
             <string>dis = 0;
-if gspeed = 0{
-alarm[0] = spd;  // loop after spd delay
-}
-else{
 alarm[0] = spd * 2;  // loop after spd delay
-}
 </string>
           </argument>
         </arguments>
@@ -152,12 +147,7 @@ if chrz &lt; mlen{   // While typing continues
       }
    }
    }
-if gspeed = 0{
-alarm[0] = spd;  // loop after spd delay
-}
-else{
 alarm[0] = spd * 2;  // loop after spd delay
-}
 }
 </string>
           </argument>

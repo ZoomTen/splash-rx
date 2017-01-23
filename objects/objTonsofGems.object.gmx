@@ -25,7 +25,27 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if instance_exists(objMarker1){direction = point_direction(x,y,objMarker1.x,objMarker1.y);}
+            <string>switch (splash_world){
+   case w_forest:
+      sprite_index = sprItem1;
+      break;
+   case w_tropical:
+      sprite_index = sprGem4;
+      break;
+   case w_snow:
+      sprite_index = sprGem3;
+      break;
+   case w_fire:
+      sprite_index = sprGem2;
+      break;
+   default:
+      sprite_index = sprItem1;
+      break;
+      }
+image_speed = 0.2;
+image_index = 0;
+
+if instance_exists(objMarker1){direction = point_direction(x,y,objMarker1.x,objMarker1.y);}
 if instance_exists(objMarkerToBoss){direction = point_direction(x,y,objMarkerToBoss.x,objMarkerToBoss.y);}
 speed = 0;
 </string>

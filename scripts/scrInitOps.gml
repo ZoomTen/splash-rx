@@ -1,6 +1,8 @@
 // Desc: Initialize option variables
 // No arguments
 
+// gspeed variable is deprecated
+
 globalvar gspeed, v_sfx, v_mus, skipcasterloads;
    gspeed = 1;   // if true, game speed = 60fps
    v_sfx  = 100;   // SFX volume <0 - 100>

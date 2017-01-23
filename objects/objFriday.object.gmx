@@ -26,12 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>sprite_index = sprFridayCaracal; // Friday's complete redesignTM
-if gspeed = 0{
-   image_speed = 0.25;
-}
-else{
    image_speed = 0.125;
-}
 </string>
           </argument>
         </arguments>

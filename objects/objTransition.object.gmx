@@ -26,14 +26,10 @@
           <argument>
             <kind>1</kind>
             <string>sprite_index = sprSplashRight;
-if gspeed == 1{
+
    room_speed = 60;
    motion_set(0,1.5);
-}
-else{
-   room_speed = 30;
-   motion_set(0,3);
-}
+   
 audio_stop_all();
 switch (splash_world){
    case w_tropical:

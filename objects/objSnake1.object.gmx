@@ -45,8 +45,7 @@ switch (splash_world){
       break;
 }
 
-if gspeed == 0{motion_set(180,4);}
-else{motion_set(180,2);}
+motion_set(180,2);
 </string>
           </argument>
         </arguments>

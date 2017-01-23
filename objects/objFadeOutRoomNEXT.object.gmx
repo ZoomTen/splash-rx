@@ -33,12 +33,7 @@ else if fadetype == 1{
 fdy0 = 0; // go up
 fdy1 = resy; // go down
 fdxx = 0;
-if gspeed == 1{
 fdsx = fadespeed;
-}
-else{
-fdsx = fadespeed/2;
-}
 }
 </string>
           </argument>

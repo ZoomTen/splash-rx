@@ -26,12 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>sprite_index = sprArrow;
-if gspeed == 0{
-image_speed = 1;
-}
-else{
 image_speed = 0.5;
-}
 </string>
           </argument>
         </arguments>
