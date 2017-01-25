@@ -53,7 +53,7 @@ globalvar vmaj, vmin, vrev, buildnumber, vcomment, gitversion;
 // bgm init
 globalvar msc_menu, msc_tropical, msc_forest, msc_snow, 
 msc_boss, msc_debug, msc_sf, msc_fire, msc_pyroboss, msc_what,
-msc_desert, msc_night, msc_sky, msc_impeccable, msc_helicase;
+msc_desert, msc_night, msc_sky, msc_impeccable, msc_helicase, msc_future;
    msc_menu       =  audio_create_stream("msc/sndmenu.ogg");
    msc_tropical   =  audio_create_stream("msc/msctropical.ogg");
    msc_forest     =  audio_create_stream("msc/sndmusic1.ogg");
@@ -71,6 +71,7 @@ msc_desert, msc_night, msc_sky, msc_impeccable, msc_helicase;
    msc_sky        =  audio_create_stream("msc/mscsky.ogg");
    msc_impeccable =  audio_create_stream("msc/mscimpeccable.ogg");
    msc_helicase   =  audio_create_stream("msc/mscdnamidiloop.ogg");
+   msc_future     =  audio_create_stream("msc/mscfuture.ogg");
 
 /*
    w_menus    = 0;  -> Menus
