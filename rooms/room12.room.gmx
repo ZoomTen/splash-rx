@@ -75,12 +75,6 @@
     <instance objName="objBigWall" x="512" y="240" name="inst_C2C48A63" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBigWall" x="320" y="304" name="inst_07E131B8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBigWall" x="192" y="336" name="inst_EF9817F9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBigWall" x="416" y="336" name="inst_6BE42C5B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBigWall" x="448" y="336" name="inst_0027E4D6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBigWall" x="480" y="336" name="inst_53084697" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBigWall" x="512" y="336" name="inst_2475EC28" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBigWall" x="544" y="336" name="inst_264310DB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBigWall" x="576" y="336" name="inst_9ACAC246" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBigWall" x="608" y="0" name="inst_59F09838" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBigWall" x="608" y="32" name="inst_B0998E9B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBigWall" x="608" y="64" name="inst_3AB06976" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -180,6 +174,12 @@
     <instance objName="objBigWall" x="544" y="464" name="inst_EB91F8E1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBigWall" x="576" y="464" name="inst_226A1B32" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPack" x="528" y="336" name="inst_2977835E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objectBigWallSlippery" x="416" y="336" name="inst_ADCC358F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objectBigWallSlippery" x="448" y="336" name="inst_8C8BB5BD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objectBigWallSlippery" x="480" y="336" name="inst_1F950E57" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objectBigWallSlippery" x="512" y="336" name="inst_64B144A7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objectBigWallSlippery" x="544" y="336" name="inst_DDCDAFE3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objectBigWallSlippery" x="576" y="336" name="inst_C01E89CC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bgTileSetDeath" x="32" y="432" w="32" h="32" xo="288" yo="128" id="10002940" name="tile_A681A5D2" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

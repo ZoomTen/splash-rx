@@ -3,7 +3,7 @@
   <caption></caption>
   <width>640</width>
   <height>480</height>
-  <vsnap>16</vsnap>
+  <vsnap>8</vsnap>
   <hsnap>16</hsnap>
   <isometric>0</isometric>
   <speed>30</speed>
@@ -127,8 +127,6 @@
     <instance objName="objBigWall" x="0" y="128" name="inst_FBF15806" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBigWall" x="64" y="128" name="inst_777C5AAA" locked="0" code="" scaleX="0.5" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlayer" x="64" y="109" name="inst_931EEA4B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBigWall" x="128" y="256" name="inst_3FEC7220" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBigWall" x="480" y="248" name="inst_42E6518F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objMarker" x="448" y="288" name="inst_627B05D6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBigWall" x="128" y="0" name="inst_B539C2C8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBigWall" x="160" y="0" name="inst_1F45502D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -201,6 +199,8 @@
     <instance objName="objDeath" x="560" y="16" name="inst_21097465" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objDeath" x="576" y="16" name="inst_3AE66775" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objDeath" x="592" y="16" name="inst_6807F06F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objectBigWallSlippery" x="480" y="248" name="inst_EB24693E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objectBigWallSlippery" x="128" y="256" name="inst_77653D28" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bgSnowTileset" x="480" y="248" w="32" h="31" xo="0" yo="0" id="10003113" name="tile_C16B4E6E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

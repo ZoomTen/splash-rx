@@ -426,25 +426,23 @@ if splash_score &lt; 0{
 }
 
 if debugm == true{
-switch lockplr{
-   case NLNF:
-      dplayerstate = "Not locked, not finished";
-      break;
-   case NLF:
-      dplayerstate = "Not locked, finished";
-      break;
-   case LNF:
-      dplayerstate = "Locked, not finished";
-      break;
-   case LF:
-      dplayerstate = "Locked, finished";
-      break;
-   default:
-      dplayerstate = "Unknown";
-      break;
-}
-
-// this bit of code moved to objIngameGUI
+   switch lockplr{
+      case NLNF:
+         dplayerstate = "Not locked, not finished";
+         break;
+      case NLF:
+         dplayerstate = "Not locked, finished";
+         break;
+      case LNF:
+         dplayerstate = "Locked, not finished";
+         break;
+      case LF:
+         dplayerstate = "Locked, finished";
+         break;
+      default:
+         dplayerstate = "Unknown";
+         break;
+   }
 }
 
 if keyboard_check_pressed(ord("Q")){
@@ -480,17 +478,30 @@ if !(lockplr &amp; 2 == 2){
       if keyboard_check(vk_left)                                // Left event
       {
          pdir = 1;
-         if place_free(x-playerhspeed,y){x -= playerhspeed;}
+         if place_free(x-playerhspeed,y){
+            x -= playerhspeed;
+            if (place_meeting(x,y+2,objWallSlippery) || place_meeting(x,y+2,objectBigWallSlippery)){hspeed = -playerhspeed/1.1;}
+            if place_free(x,y+2){
+               hspeed = 0; // don't let hspeed screw up movement while jumping after slipping
+            }
+         }    
       }
       
       if keyboard_check(vk_right)                               // Right event
       {
          pdir = 2;
-         if place_free(x+playerhspeed,y){x += playerhspeed;}
+         if place_free(x+playerhspeed,y){
+            x += playerhspeed;
+            if (place_meeting(x,y+2,objWallSlippery) || place_meeting(x,y+2,objectBigWallSlippery)){hspeed = playerhspeed/1.1;}
+            if place_free(x,y+2){
+               hspeed = 0; // don't let hspeed screw up movement while jumping after slipping
+            }
+         }   
       }
 
       if keyboard_check(vk_up)                                  // Up event [Jump / climb up]
       {
+      hspeed = hspeed/1.01; // ice snorts
          if place_meeting(x,y,objClimb)
          {
             if place_free(x,y-playerclimb){y -= playerclimb;}
@@ -706,6 +717,60 @@ if place_meeting(x,y,objDoorToBoss)                                   // If reac
    if !(instance_exists(objFadeOut)){tb = instance_create(0,0,objFadeOut);with tb{targetroom = rmBossIntro};splash_stage+=1;scrSave();}
    //lockplr = LNF;
    //if !(instance_exists(objFadeOut)){tb = instance_create(0,0,objFadeOut);with tb{targetroom = rmBossIntro};splash_stage+=1;scrSave();}
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="objectBigWallSlippery">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>{
+   action_move_contact(direction,12,false);
+   vspeed = 0;
+   hspeed = 0;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="objWallSlippery">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>{
+   action_move_contact(direction,12,false);
+   vspeed = 0;
+   hspeed = 0;
 }
 </string>
           </argument>

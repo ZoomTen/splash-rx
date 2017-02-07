@@ -34,6 +34,8 @@ Info:
    to "/etc/openal/alsoft.conf". This might fix the problem. If it doesn't,
    look for other solutions or just use Wine to run the Windows version.
    
+   If you're using JACK, sound effects may not be audible.
+   
 What this demo includes:
    - 3 worlds (Snort Forest, Lush Tropical, Winter Breeze) + 1 new world
      (Red Hot)
@@ -68,9 +70,9 @@ Some nitpicky information you probably won't care:
    will have the version number of 3.0.x.
    
 Credits:
-   Nyro Fletcher/SWG : base game, sprites, ideas, logo SFX
-   Zumipap           : music, graphics and most of the new programming
-   TheWildHyper      : new game SFX, Red Hot World boss
+   Nyro/AlleyDog Games : base game, sprites, ideas, logo SFX
+   Zumipap             : music, graphics and most of the new programming
+   TheWildHyper        : new game SFX, Red Hot World boss
    
 Dependencies (from readelf):
    [libstdc++.so.6]

@@ -349,6 +349,8 @@
       <sprite>sprites\sprClimb</sprite>
       <sprite>sprites\sprclimb2</sprite>
       <sprite>sprites\sprWall</sprite>
+      <sprite>sprites\sprIceMark</sprite>
+      <sprite>sprites\sprBIce</sprite>
       <sprite>sprites\sprite62</sprite>
       <sprite>sprites\sprMarker</sprite>
       <sprite>sprites\sprDeath</sprite>
@@ -531,6 +533,8 @@
       <object>objects\objPlayerSpell</object>
     </objects>
     <objects name="obstacles">
+      <object>objects\objWallSlippery</object>
+      <object>objects\objectBigWallSlippery</object>
       <object>objects\objBigWall</object>
       <object>objects\objWall</object>
       <object>objects\objWallBG</object>
@@ -664,7 +668,6 @@
       <room>rooms\room44</room>
     </rooms>
     <rooms name="world_snow">
-      <room>rooms\room11</room>
       <room>rooms\room12</room>
       <room>rooms\room13</room>
       <room>rooms\room14</room>

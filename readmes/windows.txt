@@ -47,6 +47,6 @@ Some nitpicky information you probably won't care:
    will have the version number of 3.0.x.
    
 Credits:
-   Nyro Fletcher/SWG : base game, sprites, ideas, logo SFX
-   Zumipap           : music, graphics and most of the new programming
-   TheWildHyper      : new game SFX, Red Hot World boss
+   Nyro/AlleyDog Games : base game, sprites, ideas, logo SFX
+   Zumipap             : music, graphics and most of the new programming
+   TheWildHyper        : new game SFX, Red Hot World boss
