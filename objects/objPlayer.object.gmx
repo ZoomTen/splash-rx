@@ -480,7 +480,7 @@ if !(lockplr &amp; 2 == 2){
          pdir = 1;
          if place_free(x-playerhspeed,y){
             x -= playerhspeed;
-            if (place_meeting(x,y+2,objWallSlippery) || place_meeting(x,y+2,objectBigWallSlippery)){hspeed = -playerhspeed/1.1;}
+            if (place_meeting(x,y+2,objWallSlippery) || place_meeting(x,y+2,objectBigWallSlippery)){hspeed = -playerhspeed;}
             if place_free(x,y+2){
                hspeed = 0; // don't let hspeed screw up movement while jumping after slipping
             }
@@ -492,16 +492,21 @@ if !(lockplr &amp; 2 == 2){
          pdir = 2;
          if place_free(x+playerhspeed,y){
             x += playerhspeed;
-            if (place_meeting(x,y+2,objWallSlippery) || place_meeting(x,y+2,objectBigWallSlippery)){hspeed = playerhspeed/1.1;}
+            if (place_meeting(x,y+2,objWallSlippery) || place_meeting(x,y+2,objectBigWallSlippery)){hspeed = playerhspeed;}
             if place_free(x,y+2){
                hspeed = 0; // don't let hspeed screw up movement while jumping after slipping
             }
          }   
       }
 
+// Ice slowdown because FRICTION(tm) wh
+      if ( (hspeed &lt; 0) || (hspeed &gt; 0) ){
+         hspeed = hspeed / 1.015;
+      }
+      
       if keyboard_check(vk_up)                                  // Up event [Jump / climb up]
       {
-      hspeed = hspeed/1.01; // ice snorts
+      hspeed = hspeed/1.1; // ice snorts
          if place_meeting(x,y,objClimb)
          {
             if place_free(x,y-playerclimb){y -= playerclimb;}
@@ -717,60 +722,6 @@ if place_meeting(x,y,objDoorToBoss)                                   // If reac
    if !(instance_exists(objFadeOut)){tb = instance_create(0,0,objFadeOut);with tb{targetroom = rmBossIntro};splash_stage+=1;scrSave();}
    //lockplr = LNF;
    //if !(instance_exists(objFadeOut)){tb = instance_create(0,0,objFadeOut);with tb{targetroom = rmBossIntro};splash_stage+=1;scrSave();}
-}
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="objectBigWallSlippery">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>{
-   action_move_contact(direction,12,false);
-   vspeed = 0;
-   hspeed = 0;
-}
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="objWallSlippery">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>{
-   action_move_contact(direction,12,false);
-   vspeed = 0;
-   hspeed = 0;
 }
 </string>
           </argument>
@@ -1248,6 +1199,60 @@ else{
       </action>
     </event>
     <event eventtype="4" ename="objBigWall">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>{
+   action_move_contact(direction,12,false);
+   vspeed = 0;
+   hspeed = 0;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="objectBigWallSlippery">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>{
+   action_move_contact(direction,12,false);
+   vspeed = 0;
+   hspeed = 0;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="objWallSlippery">
       <action>
         <libid>1</libid>
         <id>603</id>
