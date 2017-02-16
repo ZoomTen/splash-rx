@@ -196,8 +196,8 @@ off[w_ocean,1] = 0;
 off[w_clown,0] = 0;
 off[w_clown,1] = 0;
 
-off[w_walton,0] = 0;
-off[w_walton,1] = 0;
+off[w_amazing,0] = 0;
+off[w_amazing,1] = 0;
 
 off[w_pig,0] = 0;
 off[w_pig,1] = 0;

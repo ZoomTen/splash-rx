@@ -251,10 +251,6 @@
     <tile bgName="bgFire2" x="192" y="112" w="16" h="16" xo="0" yo="0" id="10008923" name="inst_B391AF57" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgFire2" x="176" y="112" w="16" h="16" xo="16" yo="0" id="10008924" name="inst_B69F50A0" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgFire2" x="288" y="112" w="16" h="16" xo="32" yo="0" id="10008925" name="inst_50D7EADB" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bgFire2" x="176" y="432" w="16" h="16" xo="80" yo="16" id="10008926" name="inst_CCDE73B2" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bgFire2" x="192" y="432" w="16" h="16" xo="96" yo="16" id="10008927" name="inst_9BE3BB2C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bgFire2" x="176" y="416" w="16" h="16" xo="80" yo="0" id="10008928" name="inst_C31D6B38" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bgFire2" x="192" y="416" w="16" h="16" xo="96" yo="0" id="10008929" name="inst_F1C60798" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgFire2" x="192" y="336" w="16" h="16" xo="48" yo="0" id="10008930" name="inst_A694FBF0" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgFire2" x="192" y="320" w="16" h="16" xo="0" yo="16" id="10008931" name="inst_E429E028" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgFire2" x="192" y="304" w="16" h="16" xo="0" yo="16" id="10008932" name="inst_34DFBF5F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -306,6 +302,10 @@
     <tile bgName="bgFire1" x="384" y="416" w="32" h="32" xo="32" yo="0" id="10011590" name="inst_CB5526B4" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgFire1" x="416" y="384" w="32" h="32" xo="32" yo="0" id="10011591" name="inst_22BEEB27" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgFire1" x="448" y="352" w="32" h="32" xo="32" yo="0" id="10011592" name="inst_891FE5AF" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgFire2" x="176" y="432" w="16" h="16" xo="112" yo="16" id="10011612" name="inst_4040C188" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgFire2" x="192" y="416" w="16" h="16" xo="128" yo="0" id="10011613" name="inst_7CFDA357" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgFire2" x="192" y="432" w="16" h="16" xo="128" yo="16" id="10011614" name="inst_F671884B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgFire2" x="176" y="416" w="16" h="16" xo="112" yo="0" id="10011615" name="inst_D66619D9" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>

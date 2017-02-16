@@ -30,6 +30,7 @@ var PLACEHOLDER_ROOM;
 
 globalvar langsel, langsels; // language select
    langsels = 1;
+   langsels = 2;
    langsel  = 0; // 0 = english
                  // 1 = indonesian
              
@@ -94,9 +95,9 @@ msc_desert, msc_night, msc_sky, msc_impeccable, msc_helicase, msc_future;
    w_meadow   = 17; -> Meadow World
    w_ocean    = 18; -> Ocean World
    w_clown    = 19; -> Aunt Helga World
-   w_walton   = 20; -> Walton World
+   w_amazing  = 20; -> Amazing World
    w_pig      = 21; -> Pig Blanet World
-   w_base     = 22;  -> Base World         (old ID was 9)
+   w_base     = 22; -> Base World          (old ID was 9)
    w_end      = 23; -> Ending              (old ID was 3.7, then 10)
    w_extra    = 99; -> Secret Boss World
 */
@@ -171,7 +172,7 @@ globalvar rm;
    
    rm[w_clown,0] = PLACEHOLDER_ROOM;
    
-   rm[w_walton,0] = PLACEHOLDER_ROOM;
+   rm[w_amazing,0] = PLACEHOLDER_ROOM;
    
    rm[w_pig,0] = PLACEHOLDER_ROOM;
    
@@ -188,16 +189,16 @@ globalvar rm;
    
    worldname[w_menus] = "Why are you even here?";
    worldname[w_start] = "Start";
-   worldname[w_forest] = "Forest";
+   worldname[w_forest] = "Base Forest";
    worldname[w_tropical] = "Lush Tropical";
    worldname[w_fire] = "Red Hot";
-   worldname[w_desert] = "Snort Desert";
+   worldname[w_desert] = "Shrivelled Desert";
    worldname[w_prehist] = "Crinkly Granny";
    worldname[w_autumn] = "Autumn Forest";
    worldname[w_snow] = "Winter Breeze";
    worldname[w_rain] = "Sunken House";
-   worldname[w_cave] = "Snort Cave";
-   worldname[w_night] = "Nighttime";
+   worldname[w_cave] = "Crystal Cave";
+   worldname[w_night] = "Starfall Hills";
    worldname[w_spooky] = "Creepy Rex";
    worldname[w_future] = "Futuristic";
    worldname[w_ethan] = "Big Mini";
@@ -206,7 +207,7 @@ globalvar rm;
    worldname[w_meadow] = "Snort Meadow";
    worldname[w_ocean] = "Dylan's Weave";
    worldname[w_clown] = "Aunt Helga";
-   worldname[w_walton] = "Walton";
+   worldname[w_amazing] = "Amazing";
    worldname[w_pig] = "Pig Blanet";
    worldname[w_base] = "Base";
    worldname[w_end] = "Ending / Credits";

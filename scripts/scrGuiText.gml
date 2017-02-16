@@ -37,6 +37,42 @@ switch(langsel){
 // option screens 2
       guitext[25]  = "Bahasa:";
       break;
+      
+   case 2:
+// general
+      guitext[0] = "Oui";
+      guitext[1] = "Non";
+// title screen
+      guitext[2]  = "Nouveau";
+      guitext[3]  = "Continuer";
+      guitext[4]  = "Options";
+      guitext[5]  = "Choisi niveau";
+      guitext[6]  = "Êtes-vous certain?";
+// options screen
+      guitext[7]  = "Volume des sons";
+      guitext[8]  = "Volume de musique";
+      guitext[9]  = "Retour au titre";
+      guitext[10] = "Gauche ou droit pour ajuster";
+      guitext[11] = "Monter ou descendre pour changer la sélection";
+      guitext[12] = "Z pour sélectionner";
+// level select screen
+      guitext[13] = "press k to die";
+      guitext[14] = "press r to return to this screen";
+      guitext[15] = "press t in this screen#to return to title";
+      guitext[16] = "press z to select level";
+      guitext[17] = "press d to toggle debug mode";
+      guitext[18] = "press i to initiate a text box";
+      guitext[19] = "MONDE: ";
+      guitext[20] = "NIVEAU: ";
+      guitext[21] = "NOM DU MONDE: ";
+// level
+      guitext[22] = " qui reste(nt)";
+      guitext[23] = "Munitions: ";
+// title cards
+      guitext[24] = "Ennemi#Vaincu!";
+// option screens 2
+      guitext[25]  = "Langage:";
+      break;
    default:
 // general
       guitext[0] = "Yes";

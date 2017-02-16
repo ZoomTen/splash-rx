@@ -9,8 +9,8 @@ switch (argument0){
       msg[2] = ". . .";
       msg[3] = "Go away.";
       msg[4] = ". . ."
-      msg[5] = "Hi! I'm Meiwakuna Baka! But you can just call me MB for short."
-      msg[6] = "Wh-"
+      msg[5] = "Hi! I'm Meiwakuna Baka! But you can just call me MB for short.";
+      msg[6] = "Wh-";
       msg[7] = "%";
       break;
    case 1:
@@ -41,9 +41,9 @@ switch (argument0){
       msg[7] = "%";
       break;
    case 3:
-      msg[0] = "Welcome to a demo of Splash Rescues Friday RX! This is essentially a '''remake''' of an older game by Nyro.##It will have new worlds, enemies, bosses and a load of other stuff (totally). But for now, just deal with snakes and yummy clipart enemies. ;)##INSTRUCTIONS:##Press Z to continue text when an arrow appears#Press X to skip text."
+      msg[0] = "Welcome to a demo of Splash Rescues Friday RX! This is essentially a '''remake''' of an older game by Nyro.##It will have new worlds, enemies, bosses and a load of other stuff (totally). But for now, just deal with snakes and yummy clipart enemies. ;)##INSTRUCTIONS:##Press Z to continue text when an arrow appears#Press X to skip text.";
       msg[1] = "Use the arrow keys to move.#<up> jump#<left> run left#<right> run right#<down> crouch##Up and down keys will change if on a ladder.#<up> climb up#<down> climb down##Be careful though, you might get stuck on a wall. (In that case, press Q to restart the level)##Other moves#<space> shoot little grey ninja weapons#*Note* You need to collect a pack of weapons to use them!!!";
-      msg[2] = "Jump up at a wall and hold left/right arrow key#(depending which way you're facing) to#glide up a wall.##Sharp-looking icicles will hurt you, softer#looking ones won't.##Spikes and snakes hurt you, but you can jump#on or shoot the snakes.##You die in 4 hits, and if you do, you lose all your ammo. Collecting yummy Splash heads will restore your health a little (totally makes sense)."
+      msg[2] = "Jump up at a wall and hold left/right arrow key#(depending which way you're facing) to#glide up a wall.##Sharp-looking icicles will hurt you, softer#looking ones won't.##Spikes and snakes hurt you, but you can jump#on or shoot the snakes.##You die in 4 hits, and if you do, you lose all your ammo. Collecting yummy Splash heads will restore your health a little (totally makes sense).";
       msg[3] = "%";
       break;
    case 4:
@@ -77,7 +77,7 @@ switch (argument0){
       msg[1] = "`R01Um, what?";
       msg[2] = "`R04Harr mah haaaaaa!";
       msg[3] = "`R01Okay. Sure. Whatever.";
-      msg[4] = "%"
+      msg[4] = "%";
       break;
    case 9:
       msg[0] = "`R05I'm a little teapot, short and stout!";
@@ -85,17 +85,17 @@ switch (argument0){
       msg[2] = "`R05OH?! WHO ARE YOU?!";
       msg[3] = "`R01I'm Splash . . .";
       msg[4] = "`R05You heard my singing, didn't you?";
-      msg[5] = "`R01Uh, yeah."
-      msg[6] = "`R05SNORT! ONLY HANDSOME HORNET CAN HEAR MY SINGING! YOU MUST BE DESTROYED!"
-      msg[7] = "`R01Oh? Oh."
-      msg[8] = "%"
+      msg[5] = "`R01Uh, yeah.";
+      msg[6] = "`R05SNORT! ONLY HANDSOME HORNET CAN HEAR MY SINGING! YOU MUST BE DESTROYED!";
+      msg[7] = "`R01Oh? Oh.";
+      msg[8] = "%";
       break;
    case 10:
       msg[0] = "`R06OOOOOOOOOOOOOOOOOUUUUUUUUUUUUHHHHHHHHHHH!!!!!!!!!!!!!!!!!!";
       msg[1] = "`R01Okay WHAT?!";
       msg[2] = "`R06I'M ELMO!!!!!! FACE THE WRATH OF MY KISSES!!!! Also peanut butter.";
       msg[3] = "`R01.";
-      msg[4] = "%"
+      msg[4] = "%";
       break;
    case 11: // Encoded text test, might be useful for spoiler text Nyro: okay H O W Zy: ;)
       msg[0] = "!!E"; // keyword
@@ -123,10 +123,10 @@ switch (argument0){
       msg[4] = "%"
       break;
    case 3915:
-      msg[0] = "Now's a good time for the world to end . . ."
-      msg[1] = ". . ."
-      msg[2] = "Okay why did you even put in this number?"
-      msg[3] = "%"
+      msg[0] = "Now's a good time for the world to end . . .";
+      msg[1] = ". . .";
+      msg[2] = "Okay why did you even put in this number?";
+      msg[3] = "%";
       break;
    case 14:
         msg[0] = "`R01STOP WITH THE ''A SIMPLE START'' THING!!!";
@@ -134,7 +134,7 @@ switch (argument0){
         msg[2] = "%";
         break;
    case 15:
-        msg[0] = "Dead ends:#With his jet shoes, Splash can glide up walls!#Jump against a wall and hold both the up and side arrow keys.##Press Z to continue"
+        msg[0] = "Dead ends:#With his jet shoes, Splash can glide up walls!#Jump against a wall and hold both the up and side arrow keys.##Press Z to continue";
         msg[1] = "%";
         break;
         
@@ -169,13 +169,13 @@ switch (argument0){
    case 22:
         msg[0] = "`R01Wait, are you Nyro?";
         msg[1] = "`R10Who's Nyro? I'm Leif. Leif Thompson. Or Leif the Leopard if you may.";
-        msg[2] = "`R01Okaay I think I see what that mink meant now . . ."
+        msg[2] = "`R01Okaay I think I see what that mink meant now . . .";
         msg[3] = "%";
         break;
    case 23:
         msg[0] = "`R01.";
         msg[1] = "`R11.";
-        msg[2] = "%"
+        msg[2] = "%";
         break;
    case 24:
         msg[0] = "`R01what.";
@@ -183,16 +183,16 @@ switch (argument0){
         msg[2] = "`R01. . .";
         msg[3] = "`R12It's right, my own grandson didn't take much of a LIKING for it either. I GOT HIM A MATCHING ONE FOR HIS BIRTHDAY!!!";
         msg[4] = "`R01Verily, this conversation is impeccable.";
-        msg[5] = "%"
+        msg[5] = "%";
         break;
    case 25:
         msg[0] = "`R13I really satisfy.";
         msg[1] = "`R01WH-";
-        msg[2] = "%"
+        msg[2] = "%";
         break;
    case 26:
         msg[0] = "`R01What the heck!!!";
-        msg[1] = "%"
+        msg[1] = "%";
         break;
 // Ranger
    case 27:

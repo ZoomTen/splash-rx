@@ -93,9 +93,8 @@
     <instance objName="objBigWall" x="512" y="288" name="inst_9C0BFA97" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBigWall" x="544" y="288" name="inst_65518664" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBigWall" x="576" y="288" name="inst_B0CDF180" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBigWall" x="288" y="448" name="inst_37FE42F0" locked="0" code="" scaleX="-0.5" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBigWall" x="288" y="448" name="inst_37FE42F0" locked="0" code="" scaleX="-1" scaleY="1.03225803375244" colour="4294967295" rotation="0"/>
     <instance objName="objBigWall" x="288" y="448" name="inst_04DFC488" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBigWall" x="320" y="448" name="inst_B6C226BD" locked="0" code="" scaleX="0.5" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBigWall" x="400" y="448" name="inst_5CF65F29" locked="0" code="" scaleX="0.5" scaleY="1.03225803375244" colour="4294967295" rotation="0"/>
     <instance objName="objBigWall" x="416" y="448" name="inst_A521B307" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBigWall" x="448" y="448" name="inst_68FA83E9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -114,8 +113,6 @@
     <instance objName="objBigWall" x="96" y="448" name="inst_B6FE9079" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBigWall" x="64" y="448" name="inst_9ED135AD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBigWall" x="32" y="448" name="inst_6C12232F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBigWall" x="64" y="352" name="inst_8E41892F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBigWall" x="144" y="272" name="inst_69657D62" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBigWall" x="32" y="224" name="inst_DEB81562" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBigWall" x="64" y="224" name="inst_BAC6EFEC" locked="0" code="" scaleX="0.5" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBigWall" x="0" y="0" name="inst_C15074FF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -197,11 +194,13 @@
     <instance objName="objDeath" x="576" y="408" name="inst_7193ABF3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objDeath" x="592" y="408" name="inst_95D1E88A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPack" x="112" y="448" name="inst_317F5944" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objDeath" x="336" y="456" name="inst_8642879D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objDeath" x="352" y="456" name="inst_0809EB39" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objDeath" x="336" y="456" name="inst_8642879D" locked="0" code="" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objDeath" x="320" y="456" name="inst_0809EB39" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objDeath" x="368" y="456" name="inst_38E15945" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objDeath" x="384" y="456" name="inst_B33D3B54" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWall" x="336" y="472" name="inst_51B11ADF" locked="0" code="" scaleX="4" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="objectBigWallSlippery" x="64" y="352" name="inst_A531E979" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objectBigWallSlippery" x="144" y="272" name="inst_772C31E8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bgSnowTileset" x="32" y="0" w="32" h="32" xo="32" yo="64" id="10005607" name="inst_4E9FE45E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -287,8 +286,6 @@
     <tile bgName="bgSnowTileset" x="416" y="288" w="32" h="32" xo="0" yo="32" id="10005693" name="inst_4CC7E54A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgSnowTileset" x="352" y="192" w="32" h="32" xo="0" yo="96" id="10005694" name="inst_4AE866FB" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgSnowTileset" x="64" y="448" w="32" h="32" xo="32" yo="32" id="10005704" name="inst_FD938D6E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bgSnowTileset" x="320" y="448" w="32" h="32" xo="64" yo="32" id="10005706" name="inst_80386393" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bgSnowTileset" x="64" y="352" w="32" h="32" xo="32" yo="64" id="10005707" name="inst_27444582" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgSnowTileset" x="32" y="224" w="32" h="32" xo="32" yo="32" id="10005711" name="inst_1A3BB56B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgSnowTileset" x="64" y="224" w="32" h="32" xo="64" yo="32" id="10005712" name="inst_2D816881" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgSnowTileset" x="96" y="448" w="32" h="32" xo="32" yo="32" id="10005713" name="inst_D71571E3" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -343,14 +340,17 @@
     <tile bgName="bgSnowTileset" x="160" y="448" w="32" h="32" xo="64" yo="32" id="10005777" name="inst_81DEAF73" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgSnowTileset" x="128" y="448" w="32" h="32" xo="32" yo="32" id="10005778" name="inst_E4393A80" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgSnowTileset" x="32" y="448" w="32" h="32" xo="32" yo="32" id="10005780" name="inst_2B803CB9" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bgSnowTileset" x="288" y="448" w="32" h="32" xo="32" yo="32" id="10005781" name="inst_4233BAC4" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bgSnowTileset" x="256" y="448" w="32" h="32" xo="0" yo="32" id="10005782" name="inst_A0088B8F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgSnowTileset" x="272" y="448" w="32" h="32" xo="32" yo="32" id="10005781" name="inst_4233BAC4" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgSnowTileset" x="240" y="448" w="32" h="32" xo="0" yo="32" id="10005782" name="inst_A0088B8F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgSnowTileset" x="160" y="0" w="32" h="32" xo="32" yo="64" id="10005783" name="inst_D4F7170F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bgSnowTileset" x="144" y="272" w="32" h="32" xo="32" yo="64" id="10005784" name="inst_482847FC" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgSnowTileset" x="272" y="416" w="32" h="32" xo="64" yo="64" id="10005785" name="inst_B4DC3C24" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgSnowTileset" x="416" y="96" w="32" h="32" xo="64" yo="64" id="10005786" name="inst_1F5D75C5" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bgSnowTileset" x="336" y="448" w="32" h="32" xo="0" yo="128" id="10008366" name="inst_D7E3A3D4" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgSnowTileset" x="368" y="448" w="32" h="32" xo="0" yo="128" id="10008367" name="inst_814E8191" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgSnowTileset" x="336" y="448" w="32" h="32" xo="0" yo="128" id="10011593" name="inst_1BFF1525" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgSnowTileset" x="320" y="448" w="32" h="32" xo="0" yo="128" id="10011594" name="inst_2362F694" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgSnowTileset" x="304" y="448" w="32" h="32" xo="64" yo="32" id="10011595" name="inst_06D28057" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgSnowTileset" x="64" y="352" w="32" h="32" xo="0" yo="0" id="10011604" name="inst_CF5E66A5" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgSnowTileset" x="144" y="272" w="32" h="32" xo="0" yo="0" id="10011605" name="inst_7106055A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>

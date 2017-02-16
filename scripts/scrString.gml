@@ -8,6 +8,9 @@ switch langsel{
    case 1:
       scrText_ID(argument0);
       break;
+   case 2:
+      scrText_FR(argument0);
+      break;
       
    default:
       scrText_EN(argument0); // default to english

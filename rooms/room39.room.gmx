@@ -419,6 +419,10 @@
     <tile bgName="bgFire2" x="592" y="128" w="16" h="16" xo="48" yo="32" id="10008998" name="inst_08A86BB3" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgFire2" x="512" y="448" w="16" h="16" xo="16" yo="32" id="10008999" name="inst_01F8978D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgFire2" x="96" y="448" w="16" h="16" xo="0" yo="32" id="10009000" name="inst_A92046DC" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgFire2" x="288" y="464" w="16" h="16" xo="112" yo="16" id="10011607" name="inst_99F59DD7" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgFire2" x="288" y="448" w="16" h="16" xo="112" yo="0" id="10011608" name="inst_09B1A7BC" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgFire2" x="304" y="448" w="16" h="16" xo="128" yo="0" id="10011609" name="inst_80BD291E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgFire2" x="304" y="464" w="16" h="16" xo="128" yo="16" id="10011610" name="inst_99C0DEBD" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>

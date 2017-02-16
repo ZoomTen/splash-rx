@@ -510,6 +510,7 @@
     <script>scripts\scrKillPlayer.gml</script>
     <script>scripts\scrInit.gml</script>
     <script>scripts\scrText_EN.gml</script>
+    <script>scripts\scrText_FR.gml</script>
     <script>scripts\scrText_ID.gml</script>
   </scripts>
   <fonts name="fonts">
@@ -722,7 +723,7 @@
     <constant name="w_meadow">17</constant>
     <constant name="w_ocean">18</constant>
     <constant name="w_clown">19</constant>
-    <constant name="w_walton">20</constant>
+    <constant name="w_amazing">20</constant>
     <constant name="w_pig">21</constant>
     <constant name="w_base">22</constant>
     <constant name="w_end">23</constant>

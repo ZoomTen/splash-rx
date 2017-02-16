@@ -26,7 +26,8 @@
           <argument>
             <kind>1</kind>
             <string>languageblah[0] = "English";
-languageblah[1] = "Indonesia";
+languageblah[1] = "Indonesian";
+languageblah[2] = "French"
 
 audio_stop_all();
 scrPlayAud(msc_debug,false);
