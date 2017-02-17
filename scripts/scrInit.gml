@@ -29,15 +29,11 @@ var PLACEHOLDER_ROOM;
    PLACEHOLDER_ROOM = room27;
 
 globalvar langsel, langsels; // language select
-   langsels = 1;
-   langsels = 2;
+   langsels = 2; // number of language options - 1
    langsel  = 0; // 0 = english
                  // 1 = indonesian
+                 // 2 = french
              
-                 // other languages?
-                 // 2 = french?
-                 // 3 = spanish?
-                 // 4 = swedish?!?!?!? wh
              
 // Version number defines
 globalvar vmaj, vmin, vrev, buildnumber, vcomment, gitversion;
